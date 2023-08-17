@@ -3,35 +3,46 @@ import styles from '../style'
 import { Link } from 'react-router-dom'
 import { logo } from '../assets'
 import {AiOutlineMenu,AiOutlineClose} from 'react-icons/ai'
+import {motion} from 'framer-motion'
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
+    const [navbar,setNavbar] = useState(false)
+    const changeNavBackground = ()=> {
+        if (window.scrollY >= 80) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
+    }
+    
+    window.addEventListener('scroll',changeNavBackground)
+    console.log(navbar,'holl')
 
   return (
-    <nav className='w-full py-6 items-center flex justify-between bg-white'>
-        <img src={logo} alt="logo" className='w-[100px] h-[30px] md:w-[200px] md:h-[45px] cursor-pointer object-contain z-[999]'/>
+    <nav className={`w-[90%] xl:w-[60%] mx-auto py-6 items-center flex justify-between z-[999]`}>
+        <div className='flex items-center justify-between w-full z-[3]'>
+                {navbar?<h1 className={`font-poppins font-bold text-2xl text-black`}>INSYLLIUM</h1>:
+                <img src={logo} alt="logo" className='w-[100px] h-[30px] md:w-[200px] md:h-[45px] cursor-pointer object-contain z-[999]'/>}
+                <span onClick={()=>setToggle((prev)=>!prev)} className='z-[2] sm:hidden blcok'>
+                    {toggle?<AiOutlineClose size={20} className='text-white'/>:<AiOutlineMenu size={20} className='text-white'/>}
+                </span>
+            </div>
         <ul className='list-none sm:flex hidden justify-end items-center flex-1 z-[999]'>
-            <Link to={`/projects`}><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors text-[#333] mr-10`}>Projects</li></Link>
-            <Link><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors text-[#333] mr-10`}>Services</li></Link>
-            <Link><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors text-[#333] mr-10`}>About</li></Link>
-            <Link><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors text-[#333]`}>Contact</li></Link>
+            <Link to={`/projects`}><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors  mr-10 ${navbar?'text-black':'text-white'}`}>Projects</li></Link>
+            <Link to={`/projects`}><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors  mr-10 ${navbar?'text-black':'text-white'}`}>Services</li></Link>
+            <Link to={`/projects`}><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors  mr-10 ${navbar?'text-black':'text-white'}`}>About</li></Link>
+            <Link to={`/projects`}><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors  mr-10 ${navbar?'text-black':'text-white'}`}>Contact</li></Link>
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center z-[1]'>
-            <span onClick={()=>setToggle((prev)=>!prev)}>
-                {toggle?<AiOutlineClose/>:<AiOutlineMenu/>}
-            </span>
-
-            <div
-                className={`${toggle ? 'flex top-20 opacity-100':'top-[-400px] opacity-0'} p-6 absolute top-20 right-0 my-2 w-full transition-all duration-500 ease-in`}
-            >
-                <ul className={`list-none flex flex-col justify-center items-center flex-1`}>
-                    <Link><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors text-[#333]`}>Projects</li></Link>
-                    <Link><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors text-[#333] mt-4`}>Services</li></Link>
-                    <Link><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors text-[#333] mt-4`}>About</li></Link>
-                    <Link><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors text-[#333] mt-4`}>Contact</li></Link>
-                </ul>
-            </div>
+        <div className={`${toggle?'opacity-100':'opacity-0'} flex flex-col w-full fixed top-0 left-0 bg-[#1F51FF] z-[2] transition-all duration-500 ease-in h-full sm:hidden`}
+        >
+            <ul className={`list-none flex flex-col items-start w-[90%] mx-auto relative top-20`}>
+                    <Link className='flex w-full justify-start items-center py-2  mt-6'><li className={`${toggle?'left-0':'left-[-200px]'} transition-all duration-500 ease-in text-left font-poppins font-normal cursor-pointer text-[22px] leading-2 text-white relative flex`}>Projects</li></Link>
+                    <Link className='flex w-full justify-start items-center py-2 mt-6'><li className={`${toggle?'left-0':'left-[-200px]'} transition-all duration-500 ease-in text-left font-poppins font-normal cursor-pointer text-[22px] leading-2 text-white relative`}>Services</li></Link>
+                    <Link className='flex w-full justify-start items-center py-2 mt-6'><li className={`${toggle?'left-0':'left-[-200px]'} transition-all duration-500 ease-in text-left font-poppins font-normal cursor-pointer text-[22px] leading-2 text-white relative`}>About</li></Link>
+                    <Link className='flex w-full justify-start items-center py-2 mt-6'><li className={`${toggle?'left-0':'left-[-200px]'} transition-all duration-500 ease-in text-left font-poppins font-normal cursor-pointer text-[22px] leading-2 text-white relative pb-4`}>Contact</li></Link>
+            </ul>
         </div>
 
     </nav>
