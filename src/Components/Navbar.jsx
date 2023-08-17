@@ -17,7 +17,6 @@ const Navbar = () => {
     }
     
     window.addEventListener('scroll',changeNavBackground)
-    console.log(navbar,'holl')
 
   return (
     <nav className={`w-[90%] xl:w-[60%] mx-auto py-6 items-center flex justify-between z-[999]`}>
