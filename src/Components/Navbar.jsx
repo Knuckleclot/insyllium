@@ -16,6 +16,7 @@ const Navbar = () => {
         }
     }
     
+    
     window.addEventListener('scroll',changeNavBackground)
 
   return (
@@ -24,7 +25,7 @@ const Navbar = () => {
                 {navbar?<h1 className={`font-poppins font-bold text-2xl text-black`}>INSYLLIUM</h1>:
                 <img src={logo} alt="logo" className='w-[100px] h-[30px] md:w-[200px] md:h-[45px] cursor-pointer object-contain z-[999]'/>}
                 <span onClick={()=>setToggle((prev)=>!prev)} className='z-[2] sm:hidden blcok'>
-                    {toggle?<AiOutlineClose size={20} className='text-white'/>:<AiOutlineMenu size={20} className='text-white'/>}
+                    {toggle?<AiOutlineClose size={20} className='text-white'/>:<AiOutlineMenu size={20} className={navbar?'text-black':'text-white'}/>}
                 </span>
             </div>
         <ul className='list-none sm:flex hidden justify-end items-center flex-1 z-[999]'>
