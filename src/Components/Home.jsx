@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './Navbar'
 import styles from '../style'
-import { laptop,curve, topwave, mobilewave } from '../assets'
+import { laptop,curve, topwave, mobilewave,botwave,botwavemob } from '../assets'
 import Hero from './Hero'
 import TechStack from './TechStack'
 import Services from './Services'
@@ -22,6 +22,7 @@ const Home = () => {
   return (
     <div className='w-full overflow-hidden relative'>
         <img src={window.innerWidth<=500?mobilewave:topwave} alt="" className='w-full object-contain absolute top-0 left-0 z-[-1]'/>
+        <img src={window.innerWidth<=500?botwavemob:botwave} alt="" className='w-full object-contain absolute bottom-0 left-0 z-[-1]'/>
         <div className={`${styles.flexCenter}`} >
             <div className={`w-full flex mb-4 fixed top-0 ${navbar&&'bg-white'} z-[999] transition-colors duration-200 ease-in`}>
                 <Navbar />

@@ -14,6 +14,8 @@ import mobapp from './mobapp.svg'
 import uiux from './uiux.svg'
 import ecommerce from './ecommerce.svg'
 import logodesign from './logodesign.svg'
+import botwave from './botwave.svg'
+import botwavemob from './botwavemob.svg'
 
 export {
     logo,
@@ -32,4 +34,6 @@ export {
     uiux,
     ecommerce,
     logodesign,
+    botwave,
+    botwavemob
 }

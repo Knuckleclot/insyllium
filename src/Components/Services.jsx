@@ -8,6 +8,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 import { services } from "../Constants";
+import {motion} from 'framer-motion'
 
 const Services = () => {
   return (
@@ -38,12 +39,12 @@ const Services = () => {
         </div>
       </div>
       <div className="flex flex-wrap -mx-4">
-        {services.map((s) => (
+        {services.map((s,i) => (
           <div
             className="md:w-1/2 lg:w-1/3 px-4 group hover:scale-[1.02] transition-all duraiton-200 ease-in cursor-pointer h-[350px] w-[400px]"
             key={s?.id}
           >
-            <div
+            <motion.div
               className="
                p-10
                md:px-7
@@ -54,7 +55,23 @@ const Services = () => {
                hover:shadow-lg
                mb-8
                max-h-[100%]
+               transition-all
+               duration-300
+               ease-in
                "
+               initial={{
+                opacity:0,
+               }}
+               whileInView={{
+                opacity:1,
+                transition:{
+                  delay:0.15*i,
+                  duration:0.25*i,
+                }
+               }}
+               viewport={{
+                once:true,
+               }}
             >
               <div className="w-[70px] h-[70px] flex items-center justify-center bg-primary group-hover:bg-blue-500 transition-colors duration-200 ease-in rounded-2xl mb-8 relative left-[50%] translate-x-[-50%]">
                 <img src={s?.logo} alt="" />
@@ -65,7 +82,7 @@ const Services = () => {
               <p className="text-body-color text-left sm:text-center">
                 {s?.content}
               </p>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>

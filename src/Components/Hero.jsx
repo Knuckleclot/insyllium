@@ -9,8 +9,19 @@ const Hero = () => {
   return (
     <div className='flex flex-col sm:flex-row'>
         <div className='flex-1 items-start flex flex-col justify-center'>
-            <h1 className='font-poppins font-semibold ss:text-[52px] text-[42px] text-white'>Coding your{" "}<br className='md:block hidden'
-            />
+            <motion.h1 className='font-poppins font-semibold ss:text-[52px] text-[42px] text-white'
+             initial={{
+                opacity:0,
+               }}
+               whileInView={{
+                opacity:1,
+                transition:{
+                  delay:0.25,
+                }
+               }}
+               viewport={{
+                once:true,
+               }}>Coding your{" "} <br className='md:block hidden'/>
                 <span className='text-white'><Typewriter
                 options={{      
                     strings: ['Vision', 'Ideas', 'Future','Success','Experience','Dreams'],
@@ -18,16 +29,17 @@ const Hero = () => {
                     loop: true,
                     wrapperClassName:'text-white'
                 }}
+                
                 />
                 </span> 
-                </h1>
+                </motion.h1>
                 <motion.p className={`${styles.paragraph} max-w-[470px] mt-5 opacity-100 transition-opacity duration-500 mb-6`}
                     initial={{
-                        y:-100,
+                        x:-100,
                         opacity:0,
                     }}
                     whileInView={{
-                        y:0,
+                        x:0,
                         opacity:1,
                         transition:{
                         delay:0.25,
@@ -38,9 +50,22 @@ const Hero = () => {
                     }}
                 >Empowering businesses to thrive in today's digital realm through our ingenious solutions is our driving force.
                 </motion.p>
-                <button className='bg-cyan-500 px-8 py-3 rounded-3xl border-none cursor-pointer text-[1em] uppercase text-white font-poppins font-normal'>
+                <motion.button className='bg-cyan-500 px-8 py-3 rounded-3xl border-none cursor-pointer text-[1em] uppercase text-white font-poppins font-normal'
+                  initial={{
+                    opacity:0,
+                   }}
+                   whileInView={{
+                    opacity:1,
+                    transition:{
+                      delay:0.25,
+                    }
+                   }}
+                   viewport={{
+                    once:true,
+                   }}
+                >
                     Get Started
-                </button>
+                </motion.button>
         </div>
         <div className='flex-1'>
             {/* <h1>hello</h1> */}

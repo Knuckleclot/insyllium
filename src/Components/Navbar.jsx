@@ -25,23 +25,32 @@ const Navbar = () => {
                 {navbar?<h1 className={`font-poppins font-bold text-2xl text-black`}>INSYLLIUM</h1>:
                 <img src={logo} alt="logo" className='w-[100px] h-[30px] md:w-[200px] md:h-[45px] cursor-pointer object-contain z-[999]'/>}
                 <span onClick={()=>setToggle((prev)=>!prev)} className='z-[2] sm:hidden blcok'>
-                    {toggle?<AiOutlineClose size={20} className='text-white'/>:<AiOutlineMenu size={20} className={navbar?'text-black':'text-white'}/>}
+                    {toggle?<AiOutlineClose size={20} className='text-black'/>:<AiOutlineMenu size={20} className={navbar?'text-black':'text-white'}/>}
                 </span>
             </div>
         <ul className='list-none sm:flex hidden justify-end items-center flex-1 z-[999]'>
             <Link to={`/projects`}><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors  mr-10 ${navbar?'text-black':'text-white'}`}>Projects</li></Link>
             <Link to={`/projects`}><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors  mr-10 ${navbar?'text-black':'text-white'}`}>Services</li></Link>
             <Link to={`/projects`}><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors  mr-10 ${navbar?'text-black':'text-white'}`}>About</li></Link>
-            <Link to={`/projects`}><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors  mr-10 ${navbar?'text-black':'text-white'}`}>Contact</li></Link>
+            <Link to={`/contact`}><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors  mr-10 ${navbar?'text-black':'text-white'}`}>Contact</li></Link>
         </ul>
 
-        <div className={`${toggle?'opacity-100':'opacity-0'} flex flex-col w-full fixed top-0 left-0 bg-[#1F51FF] z-[2] transition-all duration-500 ease-in h-full sm:hidden`}
+        <div className={`${toggle?'opacity-100 left-0':'opacity-0 -left-20'} flex flex-col w-full fixed top-0 bg-[#fff] z-[2] transition-all duration-500 ease-in h-full sm:hidden justify-center items-center`}
         >
-            <ul className={`list-none flex flex-col items-start w-[90%] mx-auto relative top-20`}>
-                    <Link className='flex w-full justify-start items-center py-2  mt-6'><li className={`${toggle?'left-0':'left-[-200px]'} transition-all duration-500 ease-in text-left font-poppins font-normal cursor-pointer text-[22px] leading-2 text-white relative flex`}>Projects</li></Link>
-                    <Link className='flex w-full justify-start items-center py-2 mt-6'><li className={`${toggle?'left-0':'left-[-200px]'} transition-all duration-500 ease-in text-left font-poppins font-normal cursor-pointer text-[22px] leading-2 text-white relative`}>Services</li></Link>
-                    <Link className='flex w-full justify-start items-center py-2 mt-6'><li className={`${toggle?'left-0':'left-[-200px]'} transition-all duration-500 ease-in text-left font-poppins font-normal cursor-pointer text-[22px] leading-2 text-white relative`}>About</li></Link>
-                    <Link className='flex w-full justify-start items-center py-2 mt-6'><li className={`${toggle?'left-0':'left-[-200px]'} transition-all duration-500 ease-in text-left font-poppins font-normal cursor-pointer text-[22px] leading-2 text-white relative pb-4`}>Contact</li></Link>
+            <ul className={`list-none flex flex-col items-start w-[80%] mx-auto relative h-min`}>
+                    <Link className='flex w-full justify-start items-center py-2  mt-4'>
+                        <li className={`${toggle?'left-0':'left-[-200px]'} transition-all duration-500 ease-in text-left font-poppins font-normal cursor-pointer text-[22px] leading-2 text-black relative flex border-b border-b-gray-400 pb-2 w-full`}>Projects</li>
+                    </Link>
+                    <Link className='flex w-full justify-start items-center py-2  mt-4'>
+                        <li className={`${toggle?'left-0':'left-[-200px]'} transition-all duration-500 ease-in text-left font-poppins font-normal cursor-pointer text-[22px] leading-2 text-black relative flex border-b border-b-gray-400 pb-2 w-full`}>Services</li>
+                    </Link>
+                    <Link className='flex w-full justify-start items-center py-2  mt-4'>
+                        <li className={`${toggle?'left-0':'left-[-200px]'} transition-all duration-500 ease-in text-left font-poppins font-normal cursor-pointer text-[22px] leading-2 text-black relative flex border-b border-b-gray-400 pb-2 w-full`}>About</li>
+                    </Link>
+                    <Link className='flex w-full justify-start items-center py-2  mt-4'>
+                        <li className={`${toggle?'left-0':'left-[-200px]'} transition-all duration-500 ease-in text-left font-poppins font-normal cursor-pointer text-[22px] leading-2 text-black relative flex border-b border-b-gray-400 pb-2 w-full`}>Contact</li>
+                    </Link>
+
             </ul>
         </div>
 
