@@ -20,11 +20,27 @@ const Navbar = () => {
     window.addEventListener('scroll',changeNavBackground)
 
   return (
+    
     <nav className={`w-[90%] xl:w-[60%] mx-auto py-6 items-center flex justify-between z-[999]`}>
         <div className='flex items-center justify-between w-full z-[3]'>
-                {navbar?<h1 className={`font-poppins font-bold text-2xl text-black`}>INSYLLIUM</h1>:
-                <img src={logo} alt="logo" className='w-[100px] h-[30px] md:w-[200px] md:h-[45px] cursor-pointer object-contain z-[999]'/>}
-                <span onClick={()=>setToggle((prev)=>!prev)} className='z-[2] sm:hidden blcok'>
+                {navbar|toggle?<motion.h1 className={`font-poppins font-bold text-2xl text-black`} 
+                initial={{
+                    x:-200,
+                }}
+                animate={{
+                    x:0,
+                    transition:{
+                        delay:0.15,
+                        duration:0.25,
+                    }
+                }}
+                viewport={{
+                    once:true
+                }}
+                
+                >INSYLLIUM</motion.h1>:
+                <img src={logo} alt="logo" className='w-[100px]  h-[30px] md:w-[200px] md:h-[45px] cursor-pointer object-contain z-[999]'/>}
+                <span onClick={()=>setToggle((prev)=>!prev)} className='z-[2] sm:hidden block'>
                     {toggle?<AiOutlineClose size={20} className='text-black'/>:<AiOutlineMenu size={20} className={navbar?'text-black':'text-white'}/>}
                 </span>
             </div>
