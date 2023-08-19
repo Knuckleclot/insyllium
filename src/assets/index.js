@@ -9,6 +9,11 @@ import twitter from './twitter.svg'
 import linkedin from './linkedin.svg'
 import topwave from './topwave.svg'
 import mobilewave from './mobilewave.svg'
+import deskapp from './deskapp.svg'
+import mobapp from './mobapp.svg'
+import uiux from './uiux.svg'
+import ecommerce from './ecommerce.svg'
+import logodesign from './logodesign.svg'
 
 export {
     logo,
@@ -22,4 +27,9 @@ export {
     twitter,
     topwave,
     mobilewave,
+    deskapp,
+    mobapp,
+    uiux,
+    ecommerce,
+    logodesign,
 }

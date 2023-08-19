@@ -1,4 +1,4 @@
-import {linkedin,twitter,instagram,facebook} from "../assets";
+import {linkedin,twitter,instagram,facebook, logodesign, mobapp, deskapp, uiux, ecommerce} from "../assets";
 
 export const footerLinks = [
   {
@@ -84,31 +84,31 @@ export const socialMedia = [
 export const services = [
   {
     id: "service-1",
-    // logo: airbnb,
+    logo: mobapp,
     title:'Mobile Applications',
     content:'Creating mobile applications for iOS and Android platforms, ranging from utility apps to complex solutions that leverage device capabilities.',
   },
   {
     id: "service-2",
-    // logo: airbnb,
+    logo: deskapp,
     title:'Web Applications',
     content:'Innovate Online with Insyllium: Where Imagination Meets Web Development. Let`s create your digital footprint together',
   },
   {
     id: "service-3",
-    // logo: airbnb,
+    logo: uiux,
     title:'UI/UX Design',
     content:'Providing user-centered design services to create intuitive and visually appealing user interfaces, enhancing the overall user experience of your clients products.',
   },
   {
     id: "service-4",
-    // logo: airbnb,
+    logo: logodesign,
     title:'Logo Design',
     content:' Our expert designers craft unique logos that leave a lasting impression, reflecting your business`s identity and values.',
   },
   {
     id: "service-5",
-    // logo: airbnb,
+    logo: ecommerce,
     title:'E-commerce Solutions',
     content:'Developing online shopping platforms with features such as product catalogs, shopping carts, payment gateways, and inventory management.',
   },
