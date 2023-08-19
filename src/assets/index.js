@@ -16,6 +16,7 @@ import ecommerce from './ecommerce.svg'
 import logodesign from './logodesign.svg'
 import botwave from './botwave.svg'
 import botwavemob from './botwavemob.svg'
+import contactimg from './contactimg.jpg'
 
 export {
     logo,
@@ -35,5 +36,6 @@ export {
     ecommerce,
     logodesign,
     botwave,
-    botwavemob
+    botwavemob,
+    contactimg
 }
