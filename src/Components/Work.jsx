@@ -51,7 +51,7 @@ const Work = () => {
                     <div className='flex items-center justify-start md:justify-between pl-0 p-4'>
                         <div className='flex flex-col'>
                             <h1 className='font-poppins font-semibold text-[24px] text-black text-left'>Hakbus</h1>
-                            <p className='font-poppins font-normal text-[16px] text-gray-500'>Mobile/Web App</p>
+                            <p className='font-poppins font-normal text-[16px] text-gray-500'>Mobile/Web Application</p>
                         </div>
                             <BsArrowRight  size={25}/>
                     </div>
@@ -60,8 +60,8 @@ const Work = () => {
                     <img src={goldentouch} alt="" className='object-contain cursor-pointer hover:opacity-70 transition-all duration-200 ease-in rounded-[2rem]'/>
                     <div className='flex items-center justify-start md:justify-between pl-0 p-4 gap-4 md:gap-0'>
                         <div className='flex flex-col'>
-                            <h1 className='font-poppins font-semibold text-[24px] text-black text-left'>Hakbus</h1>
-                            <p className='font-poppins font-normal text-[16px] text-gray-500'>Mobile/Web App</p>
+                            <h1 className='font-poppins font-semibold text-[24px] text-black text-left'>Golden Touch</h1>
+                            <p className='font-poppins font-normal text-[16px] text-gray-500'>Web Application</p>
                         </div>
                             <BsArrowRight  size={25}/>
                     </div>
