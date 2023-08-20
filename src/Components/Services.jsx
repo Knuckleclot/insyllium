@@ -76,10 +76,10 @@ const Services = () => {
               <div className="w-[70px] h-[70px] flex items-center justify-center bg-primary group-hover:bg-blue-500 transition-colors duration-200 ease-in rounded-2xl mb-8 relative left-[50%] translate-x-[-50%]">
                 <img src={s?.logo} alt="" />
               </div>
-              <h4 className="font-semibold text-xl text-dark mb-3 text-left sm:text-center">
+              <h4 className="font-semibold text-xl text-dark mb-3 text-center">
                 {s?.title}
               </h4>
-              <p className="text-body-color text-left sm:text-center">
+              <p className="text-body-color text-center">
                 {s?.content}
               </p>
             </motion.div>

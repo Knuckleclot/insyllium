@@ -20,7 +20,7 @@ const Navbar = () => {
     window.addEventListener('scroll',changeNavBackground)
 
   return (
-    <nav className={`w-[90%] xl:w-[60%] mx-auto py-6 items-center flex justify-between z-[999]`}>
+    <nav className={`w-[90%] xl:w-[60%] mx-auto py-4 items-center flex justify-between z-[999]`}>
         <div className='flex items-center justify-between w-full z-[3]'>
                 {navbar|toggle?<motion.h1 className={`font-poppins font-bold text-2xl text-black`} 
                 initial={{
@@ -34,7 +34,7 @@ const Navbar = () => {
                     }
                 }}
                 viewport={{
-                    once:true
+                    once:true,
                 }}
                 
                 >INSYLLIUM</motion.h1>:
@@ -52,7 +52,16 @@ const Navbar = () => {
             <Link to={`/contact`}><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors  mr-10 ${navbar?'text-black':'text-white'}`}>Contact</li></Link>
         </ul>
 
-        <div className={`${toggle?'opacity-100 left-0':'opacity-0 -left-20'} flex flex-col w-full fixed top-0 bg-[#fff] z-[2] transition-all duration-500 ease-in h-full sm:hidden justify-center items-center`}
+        <motion.div className={`${toggle?'opacity-100 left-0':'opacity-0 -left-20 hidden'} flex flex-col w-full fixed top-0 bg-[#fff] z-[2] transition-all duration-500 ease-in h-full sm:hidden justify-center items-center`}
+        initial={{
+            x:-200,
+        }}
+        whileInView={{
+            x:0,
+            transition:{
+                duration:0.05,
+            }
+        }}
         >
             <ul className={`list-none flex flex-col items-start w-[80%] mx-auto relative h-min`}>
                     <Link className='flex w-full justify-start items-center py-2  mt-4'>
@@ -64,12 +73,12 @@ const Navbar = () => {
                     <Link className='flex w-full justify-start items-center py-2  mt-4'>
                         <li className={`${toggle?'left-0':'left-[-200px]'} transition-all duration-500 ease-in text-left font-poppins font-normal cursor-pointer text-[22px] leading-2 text-black relative flex border-b border-b-gray-400 pb-2 w-full`}>About</li>
                     </Link>
-                    <Link className='flex w-full justify-start items-center py-2  mt-4'>
+                    <Link to={'/contact'} className='flex w-full justify-start items-center py-2  mt-4'>
                         <li className={`${toggle?'left-0':'left-[-200px]'} transition-all duration-500 ease-in text-left font-poppins font-normal cursor-pointer text-[22px] leading-2 text-black relative flex border-b border-b-gray-400 pb-2 w-full`}>Contact</li>
                     </Link>
 
             </ul>
-        </div>
+        </motion.div>
 
     </nav>
   )

@@ -2,44 +2,27 @@ import {linkedin,twitter,instagram,facebook, logodesign, mobapp, deskapp, uiux, 
 
 export const footerLinks = [
   {
-    title: "Reach Us",
-    links: [
-      {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
-      },
-      {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
-      },
-    ],
-  },
-  {
     title: "Services",
     links: [
       {
-        name: "Software Development",
+        name: "Web Applications",
         link: "software-development",
       },
       {
-        name: "Graphic Design",
-        link: "graphic-design",
+        name: "Mobile Applications",
+        link: "mobile-applications",
       },
       {
-        name: "AI Applications",
-        link: "ai-applications",
+        name: "UI/UX Design",
+        link: "ui-ux",
+      },
+      {
+        name: "Logo Design",
+        link: "logo-design",
+      },
+      {
+        name: "E-commerce Solutions",
+        link: "e-commerce",
       },
     ],
   },
@@ -55,6 +38,44 @@ export const footerLinks = [
         link: "https://www.hoobank.com/become-a-partner/",
       },
     ],
+  },
+];
+
+export const services = [
+  {
+    id: "service-1",
+    logo: mobapp,
+    title:'Mobile Applications',
+    content:'Creating mobile applications for iOS and Android platforms, ranging from utility apps to complex solutions that leverage device capabilities.',
+    link:'mobile-applications',
+  },
+  {
+    id: "service-2",
+    logo: deskapp,
+    title:'Web Applications',
+    content:'Innovate Online with Insyllium: Where Imagination Meets Web Development. Let`s create your digital footprint together',
+    link:'web-applications',
+  },
+  {
+    id: "service-3",
+    logo: uiux,
+    title:'UI/UX Design',
+    content:'Providing user-centered design services to create intuitive and visually appealing user interfaces, enhancing the overall user experience of your clients products.',
+    link:'ui-ux',
+  },
+  {
+    id: "service-4",
+    logo: logodesign,
+    title:'Logo Design',
+    content:' Our expert designers craft unique logos that leave a lasting impression, reflecting your business`s identity and values me tmadhe.',
+    link:'logo-design',
+  },
+  {
+    id: "service-5",
+    logo: ecommerce,
+    title:'E-commerce Solutions',
+    content:'Developing online shopping platforms with features such as product catalogs, shopping carts, payment gateways, and inventory management.',
+    link:'e-commerce',
   },
 ];
 
@@ -78,38 +99,5 @@ export const socialMedia = [
     id: "social-media-4",
     icon: linkedin,
     link: "https://www.linkedin.com/company/97935419",
-  },
-];
-
-export const services = [
-  {
-    id: "service-1",
-    logo: mobapp,
-    title:'Mobile Applications',
-    content:'Creating mobile applications for iOS and Android platforms, ranging from utility apps to complex solutions that leverage device capabilities.',
-  },
-  {
-    id: "service-2",
-    logo: deskapp,
-    title:'Web Applications',
-    content:'Innovate Online with Insyllium: Where Imagination Meets Web Development. Let`s create your digital footprint together',
-  },
-  {
-    id: "service-3",
-    logo: uiux,
-    title:'UI/UX Design',
-    content:'Providing user-centered design services to create intuitive and visually appealing user interfaces, enhancing the overall user experience of your clients products.',
-  },
-  {
-    id: "service-4",
-    logo: logodesign,
-    title:'Logo Design',
-    content:' Our expert designers craft unique logos that leave a lasting impression, reflecting your business`s identity and values.',
-  },
-  {
-    id: "service-5",
-    logo: ecommerce,
-    title:'E-commerce Solutions',
-    content:'Developing online shopping platforms with features such as product catalogs, shopping carts, payment gateways, and inventory management.',
   },
 ];

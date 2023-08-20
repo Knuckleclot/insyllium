@@ -50,7 +50,7 @@ const Hero = () => {
                     }}
                 >Empowering businesses to thrive in today's digital realm through our ingenious solutions is our driving force.
                 </motion.p>
-                <motion.button className='bg-cyan-500 px-8 py-3 rounded-3xl border-none cursor-pointer text-[1em] uppercase text-white font-poppins font-normal'
+                <motion.button className='bg-primary transition-all duration-200 ease-in hover:bg-blue-500 px-8 py-3 rounded-3xl border-none cursor-pointer text-[1em] uppercase text-white font-poppins font-normal'
                   initial={{
                     opacity:0,
                    }}

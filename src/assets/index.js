@@ -17,6 +17,9 @@ import logodesign from './logodesign.svg'
 import botwave from './botwave.svg'
 import botwavemob from './botwavemob.svg'
 import contactimg from './contactimg.jpg'
+import hakbus_showcase from './hakbus_showcase.jpg'
+import aboutus from './aboutus.jpg'
+import goldentouch from './goldentouch.jpg'
 
 export {
     logo,
@@ -37,5 +40,9 @@ export {
     logodesign,
     botwave,
     botwavemob,
-    contactimg
+    contactimg,
+    hakbus_showcase,
+    aboutus,
+    goldentouch,
+    
 }
