@@ -43,7 +43,7 @@ const Work = () => {
             once:true,
         }}
         >
-            <Carousel axis='horizontal' emulateTouch={true} infiniteLoop={true} showThumbs={false} showArrows={false} showIndicators={false} showStatus={false} width={window.innerWidth<=450?'60%':'100%'} className='overflow-visible group cursor-pointer' autoPlay={true} interval={3000} >
+            <Carousel axis='horizontal' emulateTouch={true} infiniteLoop={true} showThumbs={false} showArrows={false} showIndicators={false} showStatus={false} width={window.innerWidth<=450?'60%':'100%'} className='overflow-hidden group cursor-pointer' autoPlay={true} interval={3000} >
                 <div className='flex flex-1 flex-col justify-start' onClick={()=>{
                         window.location.href='/hakbus'
                     }}>
