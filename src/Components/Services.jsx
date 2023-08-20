@@ -32,8 +32,7 @@ const Services = () => {
               What We Offer
             </h2>
             <p className="text-base text-body-color">
-              There are many variations of passages of Lorem Ipsum available but
-              the majority have suffered alteration in some form.
+            With strategic insights, we amplify digital footprints, fostering growth through impactful solutions.
             </p>
           </div>
         </div>
