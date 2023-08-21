@@ -60,7 +60,7 @@ export const services = [
     id: "service-3",
     logo: uiux,
     title:'UI/UX Design',
-    content:'Providing user-centered design services to create intuitive and visually appealing user interfaces, enhancing the overall user experience of your clients products.',
+    content:'User-centered design services to create intuitive and visually appealing user interfaces, enhancing the overall user experience of your products.',
     link:'ui-ux',
   },
   {
