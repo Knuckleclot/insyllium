@@ -8,7 +8,7 @@ const AboutUs = () => {
             <img src={aboutus} alt="aboutusimg" className='object-cover h-full w-full rounded-[2rem]'/>
         </div>
         <div className='flex flex-col flex-1'>
-    <div className="flex-1 flex flex-col gap-4 p-8">
+    <div className="flex-1 flex flex-col gap-4 py-8">
         <p className='font-poppins font-normal text-[16px] text-gray-500 uppercase'>about us</p>
         <h2 className='font-poppins font-semibold text-[24px] text-black'>Turning Ideas into Reality</h2>
         <p className='font-poppins font-normal text-[16px] text-gray-500'>
