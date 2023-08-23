@@ -79,6 +79,21 @@ export const services = [
   },
 ];
 
+export const budgetoptions = [
+  {
+    title:'Less than €25,000',
+  },
+  {
+    title:'€25,000 - €50,000',
+  },
+  {
+    title:'€50,000 - €100,000',
+  },
+  {
+    title:'€100,000+',
+  },
+];
+
 export const socialMedia = [
   {
     id: "social-media-1",

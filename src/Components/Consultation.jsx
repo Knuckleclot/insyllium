@@ -3,6 +3,7 @@ import styles from '../style'
 
 const Consultation = () => {
 
+    
   return (
     <section id='consultation' className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-[#0066FF] rounded-[20px] mb-10` }>
       <div className='flex-1 flex flex-col z-[2]'>
