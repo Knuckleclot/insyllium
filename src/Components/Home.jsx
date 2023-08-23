@@ -9,6 +9,7 @@ import Footer from './Footer'
 import Work from './Work'
 import Consultation from './Consultation'
 import AboutUs from './AboutUs'
+import Benefits from './Benefits'
 
 const Home = () => {
   const [navbar,setNavbar] = useState(false)
@@ -24,7 +25,7 @@ const Home = () => {
   
   return (
     <div className='w-full overflow-hidden relative'>
-        <img src={window.innerWidth<=500?mobilewave:topwave} alt="" className='w-full object-contain absolute top-0 left-0 z-[-1]'/>
+        <img src={window.innerWidth<=768?mobilewave:topwave} alt="" className='w-full object-contain absolute top-0 left-0 z-[-1]'/>
         <div className={`${styles.flexCenter}`} >
             <div className={`w-full flex mb-4 fixed top-0 ${navbar&&'bg-white'} z-[999] transition-colors duration-200 ease-in`}>
                 <Navbar />
@@ -37,6 +38,7 @@ const Home = () => {
                 <Consultation />
                 <Work />
                 <AboutUs />
+                <Benefits />
             </div>
         </div>
         <div className={`${styles.flexCenter} bg-blue-600`} >

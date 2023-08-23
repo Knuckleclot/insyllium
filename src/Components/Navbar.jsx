@@ -45,13 +45,37 @@ const Navbar = () => {
                     {toggle?<AiOutlineClose size={20} className='text-black'/>:<AiOutlineMenu size={20} className={navbar?'text-black':'text-white'}/>}
                 </span>
             </div>
+        <div className='relative group'>
         <ul className='list-none sm:flex hidden justify-end items-center flex-1 z-[999]'>
-            <Link to={`/projects`}><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors  mr-10 ${navbar?'text-black':'text-white'}`}>Projects</li></Link>
-            <Link to={`/projects`}><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors  mr-10 ${navbar?'text-black':'text-white'}`}>Services</li></Link>
-            <Link to={`/projects`}><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors  mr-10 ${navbar?'text-black':'text-white'}`}>About</li></Link>
-            <Link to={`/contact`}><li className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-[#33bbcf] transition-colors  mr-10 ${navbar?'text-black':'text-white'}`}>Contact</li></Link>
+            <Link to={`/projects`}><li className={`font-poppins font-normal cursor-pointer text-[18px] hover:text-[#33bbcf] transition-colors  mr-10 ${navbar?'text-black':'text-white'}`}>Projects</li></Link>
+            <Link to={`/projects`}><li className={`font-poppins font-normal cursor-pointer text-[18px] hover:text-[#33bbcf] transition-colors  mr-10 ${navbar?'text-black':'text-white'}`}>Services</li></Link>
+            <Link to={`/projects`}><li className={`font-poppins font-normal cursor-pointer text-[18px] hover:text-[#33bbcf] transition-colors  mr-10 ${navbar?'text-black':'text-white'}`}>About</li></Link>
+            <Link to={`/contact`}><li className={`font-poppins font-normal cursor-pointer text-[18px] hover:text-[#33bbcf] transition-colors  mr-10 ${navbar?'text-black':'text-white'}`}>Contact</li></Link>
         </ul>
 
+        <div
+          class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible"
+          onClick=""
+        >
+          <a
+            class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
+            >Product One</a
+          >
+ 
+          <a
+            class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
+            >Product Two</a
+          >
+          <a
+            class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
+            >Product Three
+          </a>
+          <a
+            class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2"
+            >Product Four
+          </a>
+        </div>
+        </div>
         <motion.div className={`${toggle?'opacity-100 left-0':'opacity-0 -left-20 hidden'} flex flex-col w-full fixed top-0 bg-[#fff] z-[2] transition-all duration-500 ease-in h-full sm:hidden justify-center items-center`}
         initial={{
             x:-200,

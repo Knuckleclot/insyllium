@@ -22,18 +22,17 @@ const Hero = () => {
                viewport={{
                 once:true,
                }}>Coding your{" "} <br className='md:block hidden'/>
-                <span className='text-white'><Typewriter
+                <span className='text-white sm:text-secondary xl:text-white'><Typewriter
                 options={{      
                     strings: ['Vision', 'Ideas', 'Future','Success','Experience','Dreams'],
                     autoStart: true,
                     loop: true,
-                    wrapperClassName:'text-white'
                 }}
                 
                 />
                 </span> 
                 </motion.h1>
-                <motion.p className={`${styles.paragraph} max-w-[470px] mt-5 opacity-100 transition-opacity duration-500 mb-6`}
+                <motion.p className={`${styles.paragraph} max-w-[470px] mt-5 opacity-100 transition-opacity duration-500 mb-6 sm:text-black xl:text-dimWhite`}
                     initial={{
                         x:-100,
                         opacity:0,
