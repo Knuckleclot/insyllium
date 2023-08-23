@@ -3,7 +3,7 @@ import { aboutus } from '../assets'
 
 const AboutUs = () => {
   return (
-    <section className='w-full flex flex-col-reverse sm:flex-row gap-4 sm:my-20 my-10'>
+    <section id='about' className='w-full flex flex-col-reverse sm:flex-row gap-12 sm:my-20 my-10'>
         <div className='flex-1 flex justify-center items-center'>
             <img src={aboutus} alt="aboutusimg" className='object-cover h-full w-full rounded-[2rem]'/>
         </div>

@@ -14,7 +14,7 @@ const Work = () => {
     const x = useTransform(scrollYProgress,[0,1],["1%","-99%"])
 
   return (
-    <section ref={targetRef} className='w-full flex flex-col sm:flex-row sm:my-20 my-10'>
+    <section id='projects' ref={targetRef} className='w-full flex flex-col sm:flex-row sm:my-20 my-10'>
         <div className='flex flex-col flex-1 sm:flex-row gap-10 md:gap-2'>
             <div className='flex-col flex justify-evenly items-start flex-1 gap-4'>
                 <div className='flex flex-col gap-4'>

@@ -41,8 +41,8 @@ const Home = () => {
                 <Benefits />
             </div>
         </div>
-        <div className={`${styles.flexCenter} bg-blue-600`} >
-            <div className={`${styles.boxWidth} mb-4 pt-20`}>
+        <div className={`${styles.flexCenter} bg-[#0f172a]`} >
+            <div className={`${styles.boxWidth} mb-4 pt-10`}>
                 <Footer />
             </div>
         </div>
