@@ -1,4 +1,4 @@
-import { logo } from '../assets'
+import { darkmodelogo, logo } from '../assets'
 import styles from '../style'
 import { footerLinks, socialMedia } from '../Constants'
 import { Link } from 'react-router-dom'
@@ -12,7 +12,7 @@ const Footer = () =>{
     <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`} >
       <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
         <div className='flex-1 w-full i flex-col sm:flex sm:flex-row sm:items-center md:items-start justify-between md:flex-col mr-10'>
-        <img src={logo} alt='calypsologic' className='w-[150px] h-[40px] md:w-[200px] md:h-[55px] cursor-pointer object-contain' onClick={()=>{
+        <img src={darkmodelogo} alt='insylliumdark' className='w-[150px] h-[40px] md:w-[200px] md:h-[55px] cursor-pointer object-contain' onClick={()=>{
             window.location.href='#navbar'
         }}/>
           <p className={`${styles.paragraph} mt-4 max-w-[310px]`}>

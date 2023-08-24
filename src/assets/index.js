@@ -20,6 +20,9 @@ import contactimg from './contactimg.jpg'
 import hakbus_showcase from './hakbus_showcase.jpg'
 import aboutus from './aboutus.jpg'
 import goldentouch from './goldentouch.jpg'
+import lightmodelogo from './lightmodelogo.svg'
+import darkmodelogo from './darkmodelogo.svg'
+
 
 export {
     logo,
@@ -44,5 +47,6 @@ export {
     hakbus_showcase,
     aboutus,
     goldentouch,
-    
+    lightmodelogo,
+    darkmodelogo,
 }
