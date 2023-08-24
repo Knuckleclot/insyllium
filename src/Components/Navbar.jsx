@@ -98,7 +98,6 @@ const Navbar = () => {
             }}
           >
             <div className="flex flex-col items-start  group/navitem m-2 transition-all duration-100 ease-in hover:cursor-pointer">
-              {/* <p className='font-poppins font-semibold text-[18px] relative text-black after:bg-secondary after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300'>Mobile app</p> */}
               <p
                 className={`font-poppins font-semibold text-[18px] pb-1 transition-colors  mr-10 text-black`}
               >
@@ -109,7 +108,6 @@ const Navbar = () => {
               </p>
             </div>
             <div className="flex flex-col items-start  group/navitem m-2 transition-all duration-100 ease-in hover:cursor-pointer">
-              {/* <p className='font-poppins font-semibold text-[18px] relative text-black after:bg-secondary after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300'>Mobile app</p> */}
               <p
                 className={`font-poppins font-semibold text-[18px] pb-1 transition-colors  mr-10 text-black`}
               >
@@ -120,7 +118,6 @@ const Navbar = () => {
               </p>
             </div>
             <div className="flex flex-col items-start  group/navitem m-2 transition-all duration-100 ease-in hover:cursor-pointer">
-              {/* <p className='font-poppins font-semibold text-[18px] relative text-black after:bg-secondary after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300'>Mobile app</p> */}
               <p
                 className={`font-poppins font-semibold text-[18px] pb-1 transition-colors  mr-10 text-black`}
               >
@@ -131,7 +128,6 @@ const Navbar = () => {
               </p>
             </div>
             <div className="flex flex-col items-start  group/navitem m-2 transition-all duration-100 ease-in hover:cursor-pointer">
-              {/* <p className='font-poppins font-semibold text-[18px] relative text-black after:bg-secondary after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300'>Mobile app</p> */}
               <p
                 className={`font-poppins font-semibold text-[18px] pb-1 transition-colors  mr-10 text-black`}
               >
@@ -142,7 +138,6 @@ const Navbar = () => {
               </p>
             </div>
             <div className="flex flex-col items-start  group/navitem m-2 transition-all duration-100 ease-in hover:cursor-pointer">
-              {/* <p className='font-poppins font-semibold text-[18px] relative text-black after:bg-secondary after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300'>Mobile app</p> */}
               <p
                 className={`font-poppins font-semibold text-[18px] pb-1 transition-colors  mr-10 text-black`}
               >
