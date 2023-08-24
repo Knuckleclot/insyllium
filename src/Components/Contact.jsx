@@ -50,7 +50,7 @@ const Contact = () => {
         <div className={`${styles.boxWidth} mt-4 mb-4 sm:mb-0 sm:mt-20`}> 
             <div className='flex flex-col sm:flex-row mt-20 gap-8'>
                 <div className="flex flex-1">
-                    <img src={contactimg} alt="" className='w-full h-full md:max-h-[75%] lg:max-h-[85%] object-contain opacity-80 rounded-[2rem]'/>
+                    <img src={contactimg} alt="" className='w-full h-full md:max-h-[75%] lg:max-h-[85%] object-fill opacity-80 shadow-xl rounded-[2rem] mr-4'/>
                 </div>
                 <div className="flex flex-col flex-1 gap-4 justify-center items-center sm:justify-start sm:items-start">
                     <p className='font-poppins font-bold text-[40px] text-blue-500 text-left tracking-wider'>Let's talk!</p>

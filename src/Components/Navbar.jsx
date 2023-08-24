@@ -84,7 +84,7 @@ const Navbar = () => {
             </svg>
           </button>
           <motion.div // LOOK HERE
-            class="absolute hidden left-[-113px] bg-white group-hover:grid w-[600px] h-min py-3 pl-5 border-t-4 border-secondary drop-shadow-2xl transition-all duration-300 ease-in-out gap-1 grid-cols-2 rounded-b-2xl"
+            class="absolute hidden xl:left-[-113px] sm:left-[-300px]   bg-white group-hover:grid w-[600px] h-min py-3 pl-5 border-t-4 border-secondary drop-shadow-2xl transition-all duration-300 ease-in-out gap-1 grid-cols-2 rounded-b-2xl"
             initial={{
               y: 20,
               opacity: 0,

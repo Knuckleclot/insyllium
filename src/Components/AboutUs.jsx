@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <section id='about' className='w-full flex flex-col-reverse sm:flex-row gap-12 sm:my-20 my-10'>
         <div className='flex-1 flex justify-center items-center'>
-            <img src={aboutus} alt="aboutusimg" className='object-cover h-full w-full rounded-[2rem]'/>
+            <img src={aboutus} alt="aboutusimg" className='object-cover h-full w-full shadow-xl rounded-[2rem]'/>
         </div>
         <div className='flex flex-col flex-1'>
     <div className="flex-1 flex flex-col gap-4 py-8">

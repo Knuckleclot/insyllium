@@ -22,7 +22,8 @@ const Work = () => {
                     our latest work
                 </p>
                 <h1 className='font-poppins font-semibold text-[24px] tracking-wide text-gray-900'>
-                Explore a curated collection spanning diverse domains, from intuitive apps and robust backends to AI experiments. Our project snapshots provide insights into challenges, tech stacks, and outcomes.
+                Explore a curated collection spanning diverse domains, from intuitive apps and robust backends to AI experiments.
+                Our project snapshots provide insights into challenges, tech stacks, and outcomes.
                 </h1>
                 </div>
                 <button className='bg-primary transition-all duration-200 ease-in hover:bg-blue-500 px-8 py-3 rounded-3xl border-none cursor-pointer text-[1em] uppercase text-white font-poppins font-normal'>See all work</button>
@@ -53,7 +54,7 @@ const Work = () => {
                             <h1 className='font-poppins font-semibold text-[24px] text-black text-left'>Hakbus</h1>
                             <p className='font-poppins font-normal text-[16px] text-gray-500'>Mobile/Web Application</p>
                         </div>
-                            <BsArrowRight  size={25}/>
+                            <BsArrowRight  size={25} className='group-hover:fill-blue-500 group-hover:scale-[1.2] transition-all ease-in'/>
                     </div>
                 </div>
                 <div className='flex flex-1 flex-col justify-start'
@@ -66,7 +67,7 @@ const Work = () => {
                             <h1 className='font-poppins font-semibold text-[24px] text-black text-left'>Golden Touch</h1>
                             <p className='font-poppins font-normal text-[16px] text-gray-500 text-left'>Web Application</p>
                         </div>
-                            <BsArrowRight  size={25}/>
+                            <BsArrowRight  size={25} className='group-hover:fill-blue-500 group-hover:scale-[1.2] transition-all ease-in'/>
                     </div>
                 </div>
             </Carousel>
