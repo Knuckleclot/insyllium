@@ -16,6 +16,8 @@ const Navbar = () => {
     }
   };
 
+  
+
   window.addEventListener("scroll", changeNavBackground);
 
   return (
@@ -121,6 +123,16 @@ const Navbar = () => {
               <p
                 className={`font-poppins font-semibold text-[18px] pb-1 transition-colors  mr-10 text-black`}
               >
+                Ai Applications
+              </p>
+              <p className="font-poppins font-normal relative after:bg-secondary after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 group-hover/navitem:after:w-full after:transition-all after:duration-300 cursor-pointer text-[16px] pb-1 transition-colors  mr-10 text-gray-800">
+              Crafting innovative applications with machine learning possibilities.
+              </p>
+            </div>
+            <div className="flex flex-col items-start  group/navitem m-2 transition-all duration-100 ease-in hover:cursor-pointer">
+              <p
+                className={`font-poppins font-semibold text-[18px] pb-1 transition-colors  mr-10 text-black`}
+              >
                 UI/UX Design
               </p>
               <p className="font-poppins font-normal relative after:bg-secondary after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 group-hover/navitem:after:w-full after:transition-all after:duration-300 cursor-pointer text-[16px] pb-1 transition-colors  mr-10 text-gray-800">
@@ -170,7 +182,7 @@ const Navbar = () => {
         </Link>
       </ul>
 
-      <div
+      {/* <div
         class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible"
         onClick=""
       >
@@ -187,7 +199,7 @@ const Navbar = () => {
         <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
           Product Four
         </a>
-      </div>
+      </div> */}
 
       <motion.div
         className={`${

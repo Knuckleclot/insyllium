@@ -24,6 +24,11 @@ import lightmodelogo from './lightmodelogo.svg'
 import darkmodelogo from './darkmodelogo.svg'
 import aiapp from './aiapp.svg'
 import featuresandbenefits from './featuresandbenefits.svg'
+import aboutimage from './aboutimage.jpg'
+import muiz from './muiz.jpg'
+import etnik from './etnik.jpg'
+import burim from './burim.jpg'
+import naim from './naim.jpg'
 
 
 export {
@@ -53,4 +58,9 @@ export {
     darkmodelogo,
     aiapp,
     featuresandbenefits,
+    aboutimage,
+    muiz,
+    etnik,
+    burim,
+    naim,
 }

@@ -1,4 +1,4 @@
-import {linkedin,twitter,instagram,facebook, logodesign, mobapp, deskapp, uiux, ecommerce, aiapp} from "../assets";
+import {linkedin,twitter,instagram,facebook, logodesign, mobapp, deskapp, uiux, ecommerce, aiapp, burim, etnik, muiz, naim} from "../assets";
 
 export const footerLinks = [
   {
@@ -98,6 +98,33 @@ export const budgetoptions = [
   },
   {
     title:'€100,000+',
+  },
+];
+
+export const ourTeam = [
+  {
+    id:'member-1',
+    image:burim,
+    name:'Burim Hodai',
+    role:'UI/UX Designer',
+  },
+  {
+    id:'member-2',
+    image:etnik,
+    name:'Etnik Zeqiri',
+    role:'Full-stack engineer',
+  },
+  {
+    id:'member-3',
+    image:muiz,
+    name:'Muiz Rexhepi',
+    role:'Full-stack engineer',
+  },
+  {
+    id:'member-4',
+    image:naim,
+    name:'Naim Ademi',
+    role:'Project manager',
   },
 ];
 

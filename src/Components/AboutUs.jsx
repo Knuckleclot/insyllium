@@ -90,6 +90,9 @@ const AboutUs = () => {
         }}
         viewport={{
             once:true,
+        }}
+        onClick={()=>{
+            window.location.href='/about'
         }}>
             More about us
         </motion.button>

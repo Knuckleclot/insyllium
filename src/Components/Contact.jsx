@@ -4,6 +4,7 @@ import styles from '../style'
 import { services,budgetoptions } from '../Constants'
 import { contactimg } from '../assets'
 import axios from 'axios'
+import Footer from './Footer'
 
 
 
@@ -45,7 +46,7 @@ const Contact = () => {
     }
 
   return ( 
-    <div className={`${styles.flexCenter}`} >
+    <div className={`${styles.flexCenter} flex-col`} >
         <div className={`w-full flex mb-4 fixed top-0 ${navbar?'bg-white':'bg-[#0f172a]'} z-[999] transition-colors duration-200 ease-in`}>
             <Navbar />
         </div>
@@ -97,6 +98,11 @@ const Contact = () => {
                 </div>
             </div>
         </div>
+           <div className={`bg-[#0f172a] w-full`} >
+                <div className={`${styles.boxWidth} mx-auto`}>
+                    <Footer />
+                </div>
+            </div>
      </div>
   )
 }
