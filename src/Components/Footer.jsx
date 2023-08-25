@@ -28,7 +28,7 @@ const Footer = () =>{
               </h4>
               <ul className='list-none mt-4'>
                 {footerLink.links.map((link,index)=>(
-                  <li key={link.name} className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${index!==footerLink.links.length -1 ? "mb-3":"mb-0"}`}>
+                  <li key={link.name} className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite transition-colors duration-300 hover:text-secondary cursor-pointer ${index!==footerLink.links.length -1 ? "mb-3":"mb-0"}`}>
                     <Link to={`/${link.link}`}>{link.name}</Link>
                   </li>
                 ))}

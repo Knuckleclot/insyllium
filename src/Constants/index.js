@@ -27,15 +27,19 @@ export const footerLinks = [
     ],
   },
   {
-    title: "Partner",
+    title: "Useful links",
     links: [
       {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
+        name: "Projects",
+        link: "projects",
       },
       {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        name: "About",
+        link: "about",
+      },
+      {
+        name: "Contact",
+        link: "contact",
       },
     ],
   },
