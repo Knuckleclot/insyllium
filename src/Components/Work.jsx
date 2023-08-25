@@ -18,15 +18,60 @@ const Work = () => {
         <div className='flex flex-col flex-1 sm:flex-row gap-10 md:gap-2'>
             <div className='flex-col flex justify-evenly items-start flex-1 gap-4'>
                 <div className='flex flex-col gap-4'>
-                <p className='font-poppins font-normal text-[16px] uppercase text-gray-500'>
+                <motion.p className='font-poppins font-normal text-[16px] uppercase text-gray-500'
+                initial={{
+                    opacity:0,
+                    x:-100,
+                }}
+                whileInView={{
+                    opacity:1,
+                    x:0,
+                    transition:{
+                        delay:0.20,
+                        duration:0.25,
+                    }
+                }}
+                viewport={{
+                    once:true,
+                }}>
                     our latest work
-                </p>
-                <h1 className='font-poppins font-semibold text-[24px] tracking-wide text-gray-900'>
+                </motion.p>
+                <motion.h1 className='font-poppins font-semibold text-[24px] tracking-wide text-gray-900'
+                initial={{
+                    opacity:0,
+                    x:-100,
+                }}
+                whileInView={{
+                    opacity:1,
+                    x:0,
+                    transition:{
+                        delay:0.30,
+                        duration:0.25,
+                    }
+                }}
+                viewport={{
+                    once:true,
+                }}>
                 Explore a curated collection spanning diverse domains, from intuitive apps and robust backends to AI experiments.
                 Our project snapshots provide insights into challenges, tech stacks, and outcomes.
-                </h1>
+                </motion.h1>
                 </div>
-                <button className='bg-primary transition-all duration-200 ease-in hover:bg-blue-500 px-8 py-3 rounded-3xl border-none cursor-pointer text-[1em] uppercase text-white font-poppins font-normal'>See all work</button>
+                <motion.button className='bg-primary transition-all duration-200 ease-in hover:bg-blue-500 px-8 py-3 rounded-3xl border-none cursor-pointer text-[1em] uppercase text-white font-poppins font-normal'
+                initial={{
+                    opacity:0,
+                    x:-100,
+                }}
+                whileInView={{
+                    opacity:1,
+                    x:0,
+                    transition:{
+                        delay:0.35,
+                        duration:0.25,
+                    }
+                }}
+                viewport={{
+                    once:true,
+                }}>See all work</motion.button>
             </div>
         </div>
         <motion.div className='flex flex-1 items-center overflow-x-auto w-full my-10'

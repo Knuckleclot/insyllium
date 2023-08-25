@@ -206,7 +206,7 @@ const Navbar = () => {
         <ul
           className={`list-none flex flex-col items-start w-[80%] mx-auto relative h-min`}
         >
-          <Link className="flex w-full justify-start items-center py-2  mt-4">
+          <Link to={'/projects'} className="flex w-full justify-start items-center py-2  mt-4">
             <li
               className={`${
                 toggle ? "left-0" : "left-[-200px]"
@@ -215,7 +215,7 @@ const Navbar = () => {
               Projects
             </li>
           </Link>
-          <Link className="flex w-full justify-start items-center py-2  mt-4">
+          <Link to={'/services'} className="flex w-full justify-start items-center py-2  mt-4">
             <li
               className={`${
                 toggle ? "left-0" : "left-[-200px]"
@@ -224,7 +224,7 @@ const Navbar = () => {
               Services
             </li>
           </Link>
-          <Link className="flex w-full justify-start items-center py-2  mt-4">
+          <Link to={'/about'} className="flex w-full justify-start items-center py-2  mt-4">
             <li
               className={`${
                 toggle ? "left-0" : "left-[-200px]"
