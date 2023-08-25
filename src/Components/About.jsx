@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from './Navbar'
 import styles from '../style'
 import { aboutimage, laptop } from '../assets'
@@ -19,6 +19,11 @@ const About = () => {
       }
       
       window.addEventListener('scroll',changeNavBackground)
+
+      useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
   return (
     <div className={`${styles.flexCenter} flex-col`} >
         <div className={`w-full flex mb-4 fixed top-0 ${navbar?'bg-white':'bg-[#0f172a]'} z-[999] transition-colors duration-200 ease-in`}>
