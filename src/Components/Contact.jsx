@@ -13,11 +13,13 @@ const Contact = () => {
   const changeNavBackground = ()=> {
       if (window.scrollY >= 80) {
           setNavbar(true)
-      } else {
-          setNavbar(false)
-      }
-  }
-
+        } else {
+            setNavbar(false)
+        }
+    }
+    
+    window.addEventListener('scroll',changeNavBackground)
+    
     const [app_type, setapp_type] = useState("");
     const [name, setname] = useState("");
     const [email, setemail] = useState("");
@@ -25,7 +27,6 @@ const Contact = () => {
     const [message, setmessage] = useState("");
     const [budget, setbudget] = useState("");
 
-  window.addEventListener('scroll',changeNavBackground)
     const sendConsultation=async()=>{
         console.log("kupton");
         try {

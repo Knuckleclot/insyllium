@@ -22,6 +22,8 @@ import aboutus from './aboutus.jpg'
 import goldentouch from './goldentouch.jpg'
 import lightmodelogo from './lightmodelogo.svg'
 import darkmodelogo from './darkmodelogo.svg'
+import aiapp from './aiapp.svg'
+import featuresandbenefits from './featuresandbenefits.svg'
 
 
 export {
@@ -49,4 +51,6 @@ export {
     goldentouch,
     lightmodelogo,
     darkmodelogo,
+    aiapp,
+    featuresandbenefits,
 }

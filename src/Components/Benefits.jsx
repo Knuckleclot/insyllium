@@ -1,5 +1,5 @@
 import React from 'react'
-import { laptop } from '../assets'
+import { featuresandbenefits, laptop } from '../assets'
 import {GrValidate} from 'react-icons/gr'
 import { motion } from 'framer-motion'
 
@@ -208,8 +208,8 @@ const Benefits = () => {
         }}><GrValidate  size={20}/> Competitive Pricing</motion.p>
                 </div>
             </div>
-            <div className='flex-1 mt-4 hidden sm:block'>
-                <img src={laptop} alt="" className='object-contain rounded-[2rem]'/>
+            <div className='flex-1 mt-0 hidden sm:block'>
+                <img src={featuresandbenefits} alt=""  className=' drop-shadow-xl -mt-3'/>
             </div>
         </div>
 

@@ -1,4 +1,4 @@
-import {linkedin,twitter,instagram,facebook, logodesign, mobapp, deskapp, uiux, ecommerce} from "../assets";
+import {linkedin,twitter,instagram,facebook, logodesign, mobapp, deskapp, uiux, ecommerce, aiapp} from "../assets";
 
 export const footerLinks = [
   {
@@ -53,25 +53,32 @@ export const services = [
     id: "service-2",
     logo: deskapp,
     title:'Web Applications',
-    content:'Innovate Online with Insyllium: Where Imagination Meets Web Development. Let`s create your digital footprint together',
+    content:'We specialize in crafting web applications, utilizing tools and design to meet diverse business needs with innovation and precision.',
     link:'web-applications',
   },
   {
     id: "service-3",
+    logo: aiapp,
+    title:'AI Applications',
+    content:'In today`s tech-driven era, AI is truly transformative. Crafting innovative applications with machine learning to redefine possibilities.',
+    link:'ai-applications',
+  },
+  {
+    id: "service-4",
     logo: uiux,
     title:'UI/UX Design',
     content:'User-centered design services to create intuitive and visually appealing user interfaces, enhancing the overall user experience of your products.',
     link:'ui-ux',
   },
   {
-    id: "service-4",
+    id: "service-5",
     logo: logodesign,
     title:'Logo Design',
-    content:' Our expert designers craft unique logos that leave a lasting impression, reflecting your business`s identity and values me tmadhe.',
+    content:' Our expert designers meticulously craft unique logos that will leave a lasting impression, perfectly reflecting your business`s identity and values.',
     link:'logo-design',
   },
   {
-    id: "service-5",
+    id: "service-6",
     logo: ecommerce,
     title:'E-commerce Solutions',
     content:'Developing online shopping platforms with features such as product catalogs, shopping carts, payment gateways, and inventory management.',
