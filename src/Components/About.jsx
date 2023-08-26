@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './Navbar'
 import styles from '../style'
-import { aboutimage, laptop } from '../assets'
+import { aboutimage} from '../assets'
 import {BiSolidQuoteLeft} from 'react-icons/bi'
 import { ourTeam } from '../Constants'
 import Footer from './Footer'
