@@ -19,7 +19,7 @@ const Hero = () => {
                 y:0,
                 transition:{
                   delay:0.15,
-                  duration:0.30,
+                  duration:0.50,
                 }
                }}
                viewport={{
@@ -45,7 +45,7 @@ const Hero = () => {
                         opacity:1,
                         transition:{
                         delay:0.35,
-                        duration:0.30,
+                        duration:0.50,
                         },
                     }}
                     viewport={{
@@ -59,11 +59,11 @@ const Hero = () => {
                     y:100,
                    }}
                    whileInView={{
-                    opacity:1,
-                    y:0,
-                    transition:{
-                      delay:0.45,
-                      duration:0.30,
+                     y:0,
+                     opacity:100,
+                      transition:{
+                      delay:0.55,
+                      duration:0.50,
                     }
                    }}
                    viewport={{

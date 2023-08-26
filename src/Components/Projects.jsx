@@ -33,7 +33,7 @@ const Projects = () => {
         <Navbar />
       </div>
       <div className={`${styles.boxWidth} mt-4 mb-4 sm:mb-0 sm:mt-20`}>
-        <div class="flex flex-col items-center justify-center m-20">
+        {/* <div class="flex flex-col items-center justify-center m-20">
               <img
                 src="https://cdn.pixabay.com/photo/2017/06/20/08/12/maintenance-2422173__340.png"
                 className=" hover:shadow-2xl hover: transition-all duration-500"
@@ -49,8 +49,8 @@ const Projects = () => {
                   - The Insyllium Team -
                 </h1>
               </p>
-        </div>
-        {/* <div className="flex flex-col w-full my-20 h-min sm:h-[180px] items-start gap-8 sm:gap-0">
+        </div> */}
+        <div className="flex flex-col w-full my-20 h-min sm:h-[180px] items-start gap-8 sm:gap-0">
           <h1 className="flex-1 font-poppins font-semibold text-[38px] sm:text-[44px] text-gray-900 text-left">
             Projects
           </h1>
@@ -101,7 +101,7 @@ const Projects = () => {
               </div>
             </motion.div>
           ))}
-        </div> */}
+        </div>
       </div>
       <div className={`bg-[#0f172a] w-full`}>
         <div className={`${styles.boxWidth} mx-auto`}>

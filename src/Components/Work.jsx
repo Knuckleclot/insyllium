@@ -28,7 +28,7 @@ const Work = () => {
                     y:0,
                     transition:{
                         delay:0.20,
-                        duration:0.25,
+                        duration:0.50,
                     }
                 }}
                 viewport={{
@@ -46,7 +46,7 @@ const Work = () => {
                     y:0,
                     transition:{
                         delay:0.30,
-                        duration:0.25,
+                        duration:0.50,
                     }
                 }}
                 viewport={{
@@ -66,7 +66,7 @@ const Work = () => {
                     y:0,
                     transition:{
                         delay:0.35,
-                        duration:0.25,
+                        duration:0.50,
                     }
                 }}
                 viewport={{
@@ -82,7 +82,7 @@ const Work = () => {
             opacity:1,
             transition:{
                 delay:0.15,
-                duration:0.25,
+                duration:0.50,
             }
         }}
         viewport={{

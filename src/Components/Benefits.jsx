@@ -21,7 +21,7 @@ const Benefits = () => {
                     opacity:1,
                     transition:{
                         delay:0.15,
-                        duration:0.35,
+                        duration:0.50,
                     }
                 }}
                 viewport={{
@@ -38,7 +38,7 @@ const Benefits = () => {
             x:0,
             transition:{
                 delay:0.20,
-                duration:0.35,
+                duration:0.50,
             }
         }}
         viewport={{
@@ -54,7 +54,7 @@ const Benefits = () => {
             x:0,
             transition:{
                 delay:0.25,
-                duration:0.35,
+                duration:0.50,
             }
         }}
         viewport={{
@@ -70,7 +70,7 @@ const Benefits = () => {
             x:0,
             transition:{
                 delay:0.30,
-                duration:0.35,
+                duration:0.50,
             }
         }}
         viewport={{
@@ -86,7 +86,7 @@ const Benefits = () => {
             x:0,
             transition:{
                 delay:0.35,
-                duration:0.35,
+                duration:0.50,
             }
         }}
         viewport={{
@@ -102,7 +102,7 @@ const Benefits = () => {
             x:0,
             transition:{
                 delay:0.40,
-                duration:0.35,
+                duration:0.50,
             }
         }}
         viewport={{
@@ -119,7 +119,7 @@ const Benefits = () => {
                     opacity:1,
                     transition:{
                         delay:0.15,
-                        duration:0.35,
+                        duration:0.50,
                     }
                 }}
                 viewport={{
@@ -136,7 +136,7 @@ const Benefits = () => {
             x:0,
             transition:{
                 delay:0.20,
-                duration:0.35,
+                duration:0.50,
             }
         }}
         viewport={{
@@ -152,7 +152,7 @@ const Benefits = () => {
             x:0,
             transition:{
                 delay:0.25,
-                duration:0.35,
+                duration:0.50,
             }
         }}
         viewport={{
@@ -168,7 +168,7 @@ const Benefits = () => {
             x:0,
             transition:{
                 delay:0.30,
-                duration:0.35,
+                duration:0.50,
             }
         }}
         viewport={{
@@ -184,7 +184,7 @@ const Benefits = () => {
             x:0,
             transition:{
                 delay:0.35,
-                duration:0.35,
+                duration:0.50,
             }
         }}
         viewport={{
@@ -200,7 +200,7 @@ const Benefits = () => {
             x:0,
             transition:{
                 delay:0.40,
-                duration:0.35,
+                duration:0.50,
             }
         }}
         viewport={{
@@ -218,7 +218,7 @@ const Benefits = () => {
             x:0,
             transition:{
                 delay:0.30,
-                duration:0.35,
+                duration:0.50,
             }
         }}
         viewport={{

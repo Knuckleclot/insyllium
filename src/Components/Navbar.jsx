@@ -70,9 +70,9 @@ const Navbar = () => {
         </Link>
         <div class="group inline-block relative">
           <button
-            class={`${navbar ? "bg-white" : "bg-slate-900"} ${
+            class={`${
               navbar ? "text-black" : "text-white"
-            }  after:bg-secondary after:mb-2 after: after:mb after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 group-hover:after:w-[75px] group-hover:transition-all group-hover:ease-in-out group-hover:mb-2 after:transition-all after:duration-300 font-semibold rounded inline-flex items-center mr-10`}
+            } bg-none after:bg-secondary after:mb-2 after: after:mb after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 group-hover:after:w-[75px] group-hover:transition-all group-hover:ease-in-out group-hover:mb-2 after:transition-all after:duration-300 font-semibold rounded inline-flex items-center mr-10`}
           >
             <span class="homr-1 text-[18px] font-poppins font-normal h-full pb-1">
               Services
@@ -86,7 +86,7 @@ const Navbar = () => {
             </svg>
           </button>
           <motion.div // LOOK HERE
-            class="absolute hidden xl:left-[-113px] sm:left-[-300px]   bg-white group-hover:grid w-[600px] h-min py-3 pl-5 border-t-4 border-secondary drop-shadow-2xl transition-all duration-300 ease-in-out gap-1 grid-cols-2 rounded-b-2xl"
+            class="absolute hidden xl:left-[-113px] sm:left-[-300px] bg-white group-hover:grid w-[600px] h-min py-3 pl-5 border-t-4 border-secondary drop-shadow-2xl transition-all duration-300 ease-in-out gap-1 grid-cols-2 rounded-b-2xl"
             initial={{
               y: 20,
               opacity: 0,

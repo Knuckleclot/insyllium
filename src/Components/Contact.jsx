@@ -72,25 +72,6 @@ const Contact = () => {
                     <input type="text" onChange={(e) => setemail(e.target.value)} placeholder='Your email' className='font-poppins transition-all duration-200 ease-in border-b-2 border-b-black w-[90%] md:w-[70%] mt-4 p-2 pl-0 hover:border-b-blue-500 focus:border-b-blue-500 text-gray-700 outline-none' required/>
                     <input type="text" onChange={(e) => setphone(e.target.value)} placeholder='Mobile (optional) ' className='font-poppins transition-all duration-200 ease-in border-b-2 border-b-black w-[90%] md:w-[70%] mt-4 p-2 pl-0 hover:border-b-blue-500 focus:border-b-blue-500 text-gray-700 outline-none' required/>
                     <textarea name="" onChange={(e) => setmessage(e.target.value)} id="" cols="30" rows="5" placeholder='Your message' className='resize-none transition-all duration-200 ease-in p-2 mt-4 w-[90%] md:w-[70%] outline-none border-2 border-black font-poppins hover:border-blue-500'></textarea>
-                    {/* <div className='flex flex-col items-start gap-2 w-[90%]'>
-                    <span className='font-poppins font-semibold text-gray-500 text-[18px]'>Expected budget</span>
-                    <div className='flex gap-2 items-center'>
-                    <input type="checkbox" />
-                    <span className='font-poppins  font-normal text-gray-600'>Less than €25,000</span>
-                    </div>
-                    <div className='flex gap-2 items-center'>
-                    <input type="checkbox" />
-                    <span className='font-poppins font-normal text-gray-600'>€25,000 - €50,000</span>
-                    </div>
-                    <div className='flex gap-2 items-center'>
-                    <input type="checkbox" />
-                    <span className='font-poppins font-normal text-gray-600'>€50,000 - €100,000</span>
-                    </div>
-                    <div className='flex gap-2 items-center'>
-                    <input type="checkbox" />
-                    <span className='font-poppins font-normal text-gray-600'>€100,000+</span>
-                    </div>
-                    </div> */}
                     <select name="" onChange={(e) => setbudget(e.target.value)} id="" className='font-poppins transition-all duration-200 ease-in px-4 py-2 outline-none pl-0 cursor-pointer w-[90%] md:w-[70%] border-b-black border-b-2 hover:border-b-blue-500'>
                         <option value={""} className="">Select your budget</option>
                         {budgetoptions.map((s)=>(

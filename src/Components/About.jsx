@@ -119,7 +119,7 @@ const About = () => {
                         opacity:100,
                         x:0,
                         transition:{
-                            duration:0.25,
+                            duration:0.50,
                         }
                     }}
                     viewport={{
@@ -138,7 +138,7 @@ const About = () => {
                             y:0,
                             transition:{
                                 delay:0.15*index,
-                                duration:0.25,
+                                duration:0.50,
                             }
                         }}
                         viewport={{

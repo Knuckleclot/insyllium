@@ -26,7 +26,7 @@ const Services = () => {
               y:0,
               transition:{
                   delay:0.10,
-                  duration:0.30,
+                  duration:0.50,
               }
           }}
           viewport={{
@@ -52,7 +52,7 @@ const Services = () => {
                     y:0,
                     transition:{
                         delay:0.25,
-                        duration:0.30,
+                        duration:0.50,
                     }
                 }}
                 viewport={{
@@ -71,7 +71,7 @@ const Services = () => {
               y:0,
               transition:{
                   delay:0.35,
-                  duration:0.30,
+                  duration:0.50,
               }
           }}
           viewport={{
@@ -105,12 +105,14 @@ const Services = () => {
                "
                initial={{
                 opacity:0,
+                y:100,
                }}
                whileInView={{
                 opacity:1,
+                y:0,
                 transition:{
                   delay:0.15*i,
-                  duration:0.25*i,
+                  duration:0.50,
                 }
                }}
                viewport={{

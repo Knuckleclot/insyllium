@@ -16,7 +16,7 @@ const AboutUs = () => {
                 y:0,
                 transition:{
                     delay:0.30,
-                    duration:0.35,
+                    duration:0.50,
                 }
             }}
             viewport={{
@@ -35,7 +35,7 @@ const AboutUs = () => {
             y:0,
             transition:{
                 delay:0.15,
-                duration:0.35,
+                duration:0.50,
             }
         }}
         viewport={{
@@ -51,7 +51,7 @@ const AboutUs = () => {
             y:0,
             transition:{
                 delay:0.30,
-                duration:0.35,
+                duration:0.50,
             }
         }}
         viewport={{
@@ -67,7 +67,7 @@ const AboutUs = () => {
             y:0,
             transition:{
                 delay:0.40,
-                duration:0.35,
+                duration:0.50,
             }
         }}
         viewport={{
@@ -85,7 +85,7 @@ const AboutUs = () => {
             y:0,
             transition:{
                 delay:0.50,
-                duration:0.30,
+                duration:0.50,
             }
         }}
         viewport={{
@@ -107,7 +107,7 @@ const AboutUs = () => {
                 opacity:1,
                 transition:{
                     delay:0.25,
-                    duration:0.35,
+                    duration:0.50,
                 }
             }}
             viewport={{
@@ -124,7 +124,7 @@ const AboutUs = () => {
                 opacity:1,
                 transition:{
                     delay:0.1,
-                    duration:0.35,
+                    duration:0.50,
                 }
             }}
             viewport={{
@@ -141,7 +141,7 @@ const AboutUs = () => {
                 opacity:1,
                 transition:{
                     delay:0.2,
-                    duration:0.35,
+                    duration:0.50,
                 }
             }}
             viewport={{
@@ -158,7 +158,7 @@ const AboutUs = () => {
                 opacity:1,
                 transition:{
                     delay:0.40,
-                    duration:0.35,
+                    duration:0.50,
                 }
             }}
             viewport={{
