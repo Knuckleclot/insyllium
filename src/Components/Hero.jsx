@@ -12,11 +12,14 @@ const Hero = () => {
             <motion.h1 className='font-poppins font-semibold ss:text-[52px] text-[42px] text-white'
              initial={{
                 opacity:0,
+                y:100,
                }}
                whileInView={{
                 opacity:1,
+                y:0,
                 transition:{
-                  delay:0.25,
+                  delay:0.15,
+                  duration:0.30,
                 }
                }}
                viewport={{
@@ -34,14 +37,15 @@ const Hero = () => {
                 </motion.h1>
                 <motion.p className={`${styles.paragraph} max-w-[470px] mt-5 opacity-100 transition-opacity duration-500 mb-6 sm:text-black xl:text-dimWhite`}
                     initial={{
-                        x:-100,
+                        y:100,
                         opacity:0,
                     }}
                     whileInView={{
-                        x:0,
+                        y:0,
                         opacity:1,
                         transition:{
-                        delay:0.25,
+                        delay:0.35,
+                        duration:0.30,
                         },
                     }}
                     viewport={{
@@ -52,11 +56,14 @@ const Hero = () => {
                 <motion.button className='bg-primary transition-all duration-200 ease-in hover:bg-blue-500 px-8 py-3 rounded-3xl border-none cursor-pointer text-[1em] uppercase text-white font-poppins font-normal'
                   initial={{
                     opacity:0,
+                    y:100,
                    }}
                    whileInView={{
                     opacity:1,
+                    y:0,
                     transition:{
-                      delay:0.25,
+                      delay:0.45,
+                      duration:0.30,
                     }
                    }}
                    viewport={{

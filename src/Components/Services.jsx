@@ -16,10 +16,25 @@ const Services = () => {
       <div className="flex flex-wrap -mx-4">
         <div className="w-full px-4">
           <div className="text-center mx-auto mb-12 lg:mb-20 max-w-[510px]">
-            <span className="font-semibold text-lg text-primary mb-2 block">
+            <motion.span className="font-semibold text-lg text-primary mb-2 block"
+            initial={{
+              opacity:0,
+              y:200,
+          }}
+          whileInView={{
+              opacity:1,
+              y:0,
+              transition:{
+                  delay:0.10,
+                  duration:0.30,
+              }
+          }}
+          viewport={{
+              once:true,
+          }}>
               Our Services
-            </span>
-            <h2
+            </motion.span>
+            <motion.h2
               className="
                   font-bold
                   text-3xl
@@ -28,12 +43,42 @@ const Services = () => {
                   text-dark
                   mb-4
                   "
+                  initial={{
+                    opacity:0,
+                    y:200,
+                }}
+                whileInView={{
+                    opacity:1,
+                    y:0,
+                    transition:{
+                        delay:0.25,
+                        duration:0.30,
+                    }
+                }}
+                viewport={{
+                    once:true,
+                }}
             >
               What We Offer
-            </h2>
-            <p className="text-base text-body-color">
+            </motion.h2>
+            <motion.p className="text-base text-body-color"
+            initial={{
+              opacity:0,
+              y:200,
+          }}
+          whileInView={{
+              opacity:1,
+              y:0,
+              transition:{
+                  delay:0.35,
+                  duration:0.30,
+              }
+          }}
+          viewport={{
+              once:true,
+          }}>
             With strategic insights, we amplify digital footprints, fostering growth through impactful solutions.
-            </p>
+            </motion.p>
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ const Work = () => {
   return (
     <section id='projects' ref={targetRef} className='w-full flex flex-col sm:flex-row sm:my-20 my-10'>
         <div className='flex flex-col flex-1 sm:flex-row gap-10 md:gap-2'>
-            <div className='flex-col flex justify-evenly items-start flex-1 gap-4'>
+            <div className='flex-col flex justify-center items-start flex-1 gap-8 sm:gap-12'>
                 <div className='flex flex-col gap-4'>
                 <motion.p className='font-poppins font-normal text-[16px] uppercase text-gray-500'
                 initial={{
@@ -45,7 +45,7 @@ const Work = () => {
                     opacity:1,
                     y:0,
                     transition:{
-                        delay:0.2,
+                        delay:0.30,
                         duration:0.25,
                     }
                 }}
@@ -65,7 +65,7 @@ const Work = () => {
                     opacity:1,
                     y:0,
                     transition:{
-                        delay:0.1,
+                        delay:0.35,
                         duration:0.25,
                     }
                 }}

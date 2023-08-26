@@ -34,7 +34,7 @@ const AboutUs = () => {
             opacity:1,
             y:0,
             transition:{
-                delay:0.30,
+                delay:0.15,
                 duration:0.35,
             }
         }}
@@ -66,7 +66,7 @@ const AboutUs = () => {
             opacity:1,
             y:0,
             transition:{
-                delay:0.30,
+                delay:0.40,
                 duration:0.35,
             }
         }}
@@ -78,14 +78,14 @@ const AboutUs = () => {
         <motion.button className='bg-primary hover:bg-blue-500 transition-all duration-200 ease-in px-8 py-3 rounded-3xl border-none cursor-pointer text-[1em] uppercase text-white font-poppins font-normal w-full md:w-[50%]'
         initial={{
             opacity:0,
-            y:200,
+            y:70,
         }}
         whileInView={{
             opacity:1,
             y:0,
             transition:{
-                delay:0.30,
-                duration:0.2,
+                delay:0.50,
+                duration:0.30,
             }
         }}
         viewport={{

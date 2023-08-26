@@ -132,6 +132,33 @@ export const ourTeam = [
   },
 ];
 
+export const projects = [
+  {
+    id:'project-1',
+    image:burim,
+    name:'Hakbus',
+    link:'hakbus',
+  },
+  {
+    id:'project-2',
+    image:etnik,
+    name:'Golden Touch',
+    link:'golden-touch',
+  },
+  {
+    id:'project-3',
+    image:muiz,
+    name:'Mebus',
+    link:'mebus',
+  },
+  {
+    id:'project-4',
+    image:naim,
+    name:'MeTocak',
+    link:'metocak',
+  },
+];
+
 export const socialMedia = [
   {
     id: "social-media-1",
