@@ -69,6 +69,9 @@ const Hero = () => {
                    viewport={{
                     once:true,
                    }}
+                   onClick={()=>{
+                    window.location.href='#consultation'
+                   }}
                 >
                     Get Started
                 </motion.button>
