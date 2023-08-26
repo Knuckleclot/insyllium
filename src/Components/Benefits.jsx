@@ -209,7 +209,21 @@ const Benefits = () => {
                 </div>
             </div>
             <div className='flex-1 mt-0 hidden sm:block'>
-                <img src={featuresandbenefits} alt=""  className=' drop-shadow-xl -mt-3'/>
+                <motion.img src={featuresandbenefits} alt=""  className=' drop-shadow-xl -mt-3'        initial={{
+            opacity:0,
+            x:500,
+        }}
+        whileInView={{
+            opacity:1,
+            x:0,
+            transition:{
+                delay:0.30,
+                duration:0.35,
+            }
+        }}
+        viewport={{
+            once:true,
+        }}/>
             </div>
         </div>
 

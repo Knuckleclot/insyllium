@@ -21,11 +21,11 @@ const Work = () => {
                 <motion.p className='font-poppins font-normal text-[16px] uppercase text-gray-500'
                 initial={{
                     opacity:0,
-                    x:-100,
+                    y:100,
                 }}
                 whileInView={{
                     opacity:1,
-                    x:0,
+                    y:0,
                     transition:{
                         delay:0.20,
                         duration:0.25,
@@ -39,13 +39,13 @@ const Work = () => {
                 <motion.h1 className='font-poppins font-semibold text-[24px] tracking-wide text-gray-900'
                 initial={{
                     opacity:0,
-                    x:-100,
+                    y:100,
                 }}
                 whileInView={{
                     opacity:1,
-                    x:0,
+                    y:0,
                     transition:{
-                        delay:0.30,
+                        delay:0.2,
                         duration:0.25,
                     }
                 }}
@@ -59,13 +59,13 @@ const Work = () => {
                 <motion.button className='bg-primary transition-all duration-200 ease-in hover:bg-blue-500 px-8 py-3 rounded-3xl border-none cursor-pointer text-[1em] uppercase text-white font-poppins font-normal'
                 initial={{
                     opacity:0,
-                    x:-100,
+                    y:100,
                 }}
                 whileInView={{
                     opacity:1,
-                    x:0,
+                    y:0,
                     transition:{
-                        delay:0.35,
+                        delay:0.1,
                         duration:0.25,
                     }
                 }}

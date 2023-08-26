@@ -9,13 +9,13 @@ const AboutUs = () => {
             <motion.img src={aboutus} alt="aboutusimg" className='object-cover h-full w-full shadow-xl rounded-[2rem]'
             initial={{
                 opacity:0,
-                x:-200, 
+                y:200, 
             }}
             whileInView={{
                 opacity:1,
-                x:0,
+                y:0,
                 transition:{
-                    delay:0.25,
+                    delay:0.30,
                     duration:0.35,
                 }
             }}
@@ -28,13 +28,13 @@ const AboutUs = () => {
         <motion.p className='font-poppins font-normal text-[16px] text-gray-500 uppercase'
         initial={{
             opacity:0,
-            x:200,
+            y:200,
         }}
         whileInView={{
             opacity:1,
-            x:0,
+            y:0,
             transition:{
-                delay:0.25,
+                delay:0.30,
                 duration:0.35,
             }
         }}
@@ -44,11 +44,11 @@ const AboutUs = () => {
         <motion.h2 className='font-poppins font-semibold text-[24px] text-black'
         initial={{
             opacity:0,
-            x:200,
+            y:200,
         }}
         whileInView={{
             opacity:1,
-            x:0,
+            y:0,
             transition:{
                 delay:0.30,
                 duration:0.35,
@@ -60,13 +60,13 @@ const AboutUs = () => {
         <motion.p className='font-poppins font-normal text-[16px] text-gray-500'
         initial={{
             opacity:0,
-            x:200,
+            y:200,
         }}
         whileInView={{
             opacity:1,
-            x:0,
+            y:0,
             transition:{
-                delay:0.35,
+                delay:0.30,
                 duration:0.35,
             }
         }}
@@ -78,14 +78,14 @@ const AboutUs = () => {
         <motion.button className='bg-primary hover:bg-blue-500 transition-all duration-200 ease-in px-8 py-3 rounded-3xl border-none cursor-pointer text-[1em] uppercase text-white font-poppins font-normal w-full md:w-[50%]'
         initial={{
             opacity:0,
-            x:200,
+            y:200,
         }}
         whileInView={{
             opacity:1,
-            x:0,
+            y:0,
             transition:{
-                delay:0.40,
-                duration:0.35,
+                delay:0.30,
+                duration:0.2,
             }
         }}
         viewport={{
@@ -123,7 +123,7 @@ const AboutUs = () => {
             whileInView={{
                 opacity:1,
                 transition:{
-                    delay:0.30,
+                    delay:0.1,
                     duration:0.35,
                 }
             }}
@@ -140,7 +140,7 @@ const AboutUs = () => {
             whileInView={{
                 opacity:1,
                 transition:{
-                    delay:0.35,
+                    delay:0.2,
                     duration:0.35,
                 }
             }}
