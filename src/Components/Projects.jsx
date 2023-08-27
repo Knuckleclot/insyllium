@@ -34,7 +34,7 @@ const Projects = () => {
       </div>
       <div className={`${styles.boxWidth} mt-4 mb-4 sm:mb-0 sm:mt-20`}>
         <div class="flex flex-col items-center justify-center m-20">
-              <img
+              <im loading='lazy'g
                 src="https://cdn.pixabay.com/photo/2017/06/20/08/12/maintenance-2422173__340.png"
                 className=" hover:shadow-2xl hover: transition-all duration-500"
                 alt="tailwindcss maintenance"

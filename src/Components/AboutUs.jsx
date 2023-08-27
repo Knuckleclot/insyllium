@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <section id='about' className='w-full flex flex-col-reverse sm:flex-row gap-12 sm:my-20 my-10'>
         <div className='flex-1 flex justify-center items-center'>
-            <motion.img src={aboutus} alt="aboutusimg" className='object-cover h-full w-full shadow-xl rounded-[2rem]'
+            <motion.img loading='lazy' src={aboutus} alt="aboutusimg" className='object-cover h-full w-full shadow-xl rounded-[2rem]'
             initial={{
                 opacity:0,
                 y:200, 
@@ -84,7 +84,7 @@ const AboutUs = () => {
             opacity:1,
             y:0,
             transition:{
-                delay:0.50,
+                delay:0.60,
                 duration:0.50,
             }
         }}

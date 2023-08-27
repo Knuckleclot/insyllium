@@ -93,7 +93,7 @@ const Work = () => {
                 <div className='flex flex-1 flex-col justify-start' onClick={()=>{
                         window.location.href='/hakbus'
                     }}>
-                    <img src={hakbus_showcase} alt="" role='button' className='object-contain group-hover:opacity-80 transition-all duration-200 ease-in rounded-[2rem]' />
+                    <img loading='lazy' src={hakbus_showcase} alt="" role='button' className='object-contain group-hover:opacity-80 transition-all duration-200 ease-in rounded-[2rem]' />
                     <div className='flex items-center justify-start md:justify-between pl-0 p-4'>
                         <div className='flex flex-col'>
                             <h1 className='font-poppins font-semibold text-[24px] text-black text-left'>Hakbus</h1>
@@ -106,7 +106,7 @@ const Work = () => {
                 onClick={()=>{
                     window.location.href='http://goldentouch-mk.com/'
                 }}>
-                    <img src={goldentouch} alt="" className='object-contain cursor-pointer hover:opacity-70 transition-all duration-200 ease-in rounded-[2rem]' />
+                    <img loading='lazy' src={goldentouch} alt="" className='object-contain cursor-pointer hover:opacity-70 transition-all duration-200 ease-in rounded-[2rem]' />
                     <div className='flex items-center justify-start md:justify-between pl-0 p-4 gap-4 md:gap-0'>
                         <div className='flex flex-col'>
                             <h1 className='font-poppins font-semibold text-[24px] text-black text-left'>Golden Touch</h1>

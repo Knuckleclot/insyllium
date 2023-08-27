@@ -12,7 +12,7 @@ const Footer = () =>{
     <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`} >
       <div className={`${styles.flexStart} sm:flex-row flex-col mb-8 w-full`}>
         <div className='flex-1 w-full i flex-col sm:items-center md:items-start md:justify-between md:flex-col mr-10 md:mt-0 mt-10'>
-        <img src={darkmodelogo} alt='insylliumdark' className='w-[150px] h-[40px] md:w-[200px] md:h-[55px] cursor-pointer object-contain' onClick={()=>{
+        <img loading='lazy' src={darkmodelogo} alt='insylliumdark' className='w-[150px] h-[40px] md:w-[200px] md:h-[55px] cursor-pointer object-contain' onClick={()=>{
             window.location.href='#navbar'
         }}/>
           <p className={`${styles.paragraph} mt-4 max-w-[310px]`}>
@@ -43,7 +43,7 @@ const Footer = () =>{
 
         <div className='flex flex-row md:mt-0 mt-6'>
             {socialMedia.map((social, index)=>(
-              <img
+              <img loading='lazy'
               key={social.id}
               src={social.icon}
               alt={social.id}

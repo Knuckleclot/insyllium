@@ -63,7 +63,7 @@ const About = () => {
                     }}>To build software that gives customer-facing teams at small and medium-sized businesses the ability to create fruitful and enduring relationships with customers.</motion.p>
             </div>
             <div className='relative w-full my-20'>
-                <img src={aboutimage} alt="" className='object-contain sm:object-fill w-full h-full sm:h-[500px] rounded-xl'/>
+                <img src={aboutimage} loading='lazy' alt="" className='object-contain sm:object-fill w-full h-full sm:h-[500px] rounded-xl'/>
             </div>
             <hr className='bg-gray-800 h-[2px] my-8'/>
             <div className='flex flex-col sm:flex-row w-full my-20 gap-12 sm:gap-4'>
@@ -144,7 +144,7 @@ const About = () => {
                         viewport={{
                             once:true,
                         }}>
-                        <img src={o?.image} alt="" className='w-full h-full object-contain rounded-xl'/>
+                        <img loading='lazy' src={o?.image} alt="" className='w-full h-full object-contain rounded-xl'/>
                         <h1 className='font-poppins font-semibold text-[20px] max-w-[350px] text-gray-900 text-left mt-2'>{o?.name}</h1>
                         <p className='font-poppins font-normal text-[14px] text-gray-800 text-left'>{o?.role}</p>
                     </motion.div>

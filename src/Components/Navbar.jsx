@@ -24,9 +24,9 @@ const Navbar = () => {
     <nav
       className={`w-[90%] xl:w-[60%] mx-auto py-4 items-center flex justify-between z-[999]`}
     >
-      <div className="flex items-center justify-between w-full z-[3]">
+      <div className="flex items-center w-full justify-between z-[3]">
         {navbar | toggle ? (
-          <img
+          <img loading='lazy'
             src={lightmodelogo}
             alt="logo"
             className="w-[100px]  h-[30px] md:w-[200px] md:h-[45px] cursor-pointer object-contain z-[999]"
@@ -35,7 +35,7 @@ const Navbar = () => {
             }}
           />
         ) : (
-          <img
+          <img loading='lazy'
             src={darkmodelogo}
             alt="logo"
             className="w-[100px]  h-[30px] md:w-[200px] md:h-[45px] cursor-pointer object-contain z-[999]"
@@ -86,7 +86,7 @@ const Navbar = () => {
             </svg>
           </button>
           <motion.div // LOOK HERE
-            class="absolute hidden xl:left-[-113px] sm:left-[-300px] bg-white group-hover:grid w-[600px] h-min py-3 pl-5 border-t-4 border-secondary drop-shadow-2xl transition-all duration-300 ease-in-out gap-1 grid-cols-2 rounded-b-2xl"
+            class="absolute hidden xl:left-[-253px] sm:left-[-300px] bg-white group-hover:grid w-[600px] h-min py-3 pl-5 border-t-4 border-secondary drop-shadow-2xl transition-all duration-300 ease-in-out gap-1 grid-cols-2 rounded-b-2xl"
             initial={{
               y: 20,
               opacity: 0,
@@ -99,7 +99,7 @@ const Navbar = () => {
               },
             }}
           >
-            <div className="flex flex-col items-start  group/navitem m-2 transition-all duration-100 ease-in hover:cursor-pointer">
+            <div className="flex flex-col items-start group/navitem m-2 transition-all duration-100 ease-in hover:cursor-pointer">
               <p
                 className={`font-poppins font-semibold text-[18px] pb-1 transition-colors  mr-10 text-black`}
               >
@@ -171,7 +171,7 @@ const Navbar = () => {
             About
           </li>
         </Link>
-        <Link to={`/contact`}>
+        {/* <Link to={`/contact`}>
           <li
             className={`font-poppins font-normal relative after:bg-secondary after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer text-[18px] transition-colors pb-1 mr-10 ${
               navbar ? "text-black" : "text-white"
@@ -179,9 +179,15 @@ const Navbar = () => {
           >
             Contact
           </li>
-        </Link>
-      </ul>
+        </Link> */}
 
+        {/* BUTONI RI CONTACT*/}
+         <Link to="/contact" class={`rounded-md px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium ${navbar?'border-slate-900':'border-white'} text-white transition-all duration-300`}>
+          <span class={`absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 ${navbar?'bg-slate-900':'bg-white'} top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease`}></span>
+          <span class={`relative ${navbar?'text-slate-900 group-hover:text-white':'text-white group-hover:text-slate-900'} transition duration-300 ease font-poppins font-normal text-[1.1em]`}>Contact</span>
+          </Link>
+      </ul>
+        
       {/* <div
         class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible"
         onClick=""

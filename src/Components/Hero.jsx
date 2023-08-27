@@ -62,7 +62,7 @@ const Hero = () => {
                      y:0,
                      opacity:100,
                       transition:{
-                      delay:0.55,
+                      delay:0.35,
                       duration:0.50,
                     }
                    }}
