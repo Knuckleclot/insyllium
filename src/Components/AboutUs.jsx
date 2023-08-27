@@ -75,7 +75,7 @@ const AboutUs = () => {
         }}>
             In this digital age, developing a successful corporate empire requires meaningful connections. Our team creates user-focused websites and mobile applications that enhance your market competitiveness.
         </motion.p>
-        <motion.button className='bg-primary hover:bg-blue-500 transition-all duration-200 ease-in px-8 py-3 rounded-3xl border-none cursor-pointer text-[1em] uppercase text-white font-poppins font-normal w-full md:w-[50%]'
+        {/* <motion.button className='bg-primary hover:bg-blue-500 transition-all duration-200 ease-in px-8 py-3 rounded-3xl border-none cursor-pointer text-[1em] uppercase text-white font-poppins font-normal w-full md:w-[50%]'
         initial={{
             opacity:0,
             y:70,
@@ -95,18 +95,42 @@ const AboutUs = () => {
             window.location.href='/about'
         }}>
             More about us
-        </motion.button>
+        </motion.button> */}
+        <motion.button onClick={()=>{
+                    window.location.href='/about'
+                   }} class="w-full md:w-[50%] relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-poppins font-normal text-white bg-black rounded-3xl group"
+                   initial={{
+                    opacity:0,
+                    y:100,
+                   }}
+                   whileInView={{
+                     y:0,
+                     opacity:100,
+                      transition:{
+                      delay:0.35,
+                      duration:0.50,
+                    }
+                   }}
+                   viewport={{
+                    once:true,
+                   }}>
+                    <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-blue-500 rounded-3xl group-hover:w-full group-hover:h-56"></span>
+                    <span class="absolute inset-0 w-full h-full rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+                    <span class="relative cursor-pointer text-[1em] uppercase text-white font-poppins font-normal">more about us</span>
+                </motion.button>
     </div>
     <div className="flex-1 border border-gray-300 rounded-xl flex justify-center items-center mt-8">
         <div className='grid grid-cols-2 gap-8 p-8'>
             <motion.div className='flex flex-col items-center'
             initial={{
                 opacity:0,
+                y:100,
             }}
             whileInView={{
                 opacity:1,
+                y:0,
                 transition:{
-                    delay:0.25,
+                    delay:0.15,
                     duration:0.50,
                 }
             }}
@@ -119,11 +143,13 @@ const AboutUs = () => {
             <motion.div className='flex flex-col items-center'
             initial={{
                 opacity:0,
+                y:100,
             }}
             whileInView={{
                 opacity:1,
+                y:0,
                 transition:{
-                    delay:0.1,
+                    delay:0.25,
                     duration:0.50,
                 }
             }}
@@ -136,11 +162,13 @@ const AboutUs = () => {
             <motion.div className='flex flex-col items-center'
             initial={{
                 opacity:0,
+                y:100,
             }}
             whileInView={{
                 opacity:1,
+                y:0,
                 transition:{
-                    delay:0.2,
+                    delay:0.35,
                     duration:0.50,
                 }
             }}
@@ -153,11 +181,13 @@ const AboutUs = () => {
             <motion.div className='flex flex-col items-center'
             initial={{
                 opacity:0,
+                y:100,
             }}
             whileInView={{
                 opacity:1,
+                y:0,
                 transition:{
-                    delay:0.40,
+                    delay:0.45,
                     duration:0.50,
                 }
             }}

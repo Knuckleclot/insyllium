@@ -56,7 +56,7 @@ const Work = () => {
                 Our project snapshots provide insights into challenges, tech stacks, and outcomes.
                 </motion.h1>
                 </div>
-                <motion.button className='bg-primary transition-all duration-200 ease-in hover:bg-blue-500 px-8 py-3 rounded-3xl border-none cursor-pointer text-[1em] uppercase text-white font-poppins font-normal'
+                {/* <motion.button className='bg-primary transition-all duration-200 ease-in hover:bg-blue-500 px-8 py-3 rounded-3xl border-none cursor-pointer text-[1em] uppercase text-white font-poppins font-normal'
                 initial={{
                     opacity:0,
                     y:100,
@@ -71,7 +71,29 @@ const Work = () => {
                 }}
                 viewport={{
                     once:true,
-                }}>See all work</motion.button>
+                }}>See all work</motion.button> */}
+                     <motion.button onClick={()=>{
+                    window.location.href='/projects'
+                   }} class="relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-poppins font-normal text-white bg-black rounded-3xl group"
+                   initial={{
+                    opacity:0,
+                    y:100,
+                   }}
+                   whileInView={{
+                     y:0,
+                     opacity:100,
+                      transition:{
+                      delay:0.35,
+                      duration:0.50,
+                    }
+                   }}
+                   viewport={{
+                    once:true,
+                   }}>
+                    <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-blue-500 rounded-3xl group-hover:w-full group-hover:h-56"></span>
+                    <span class="absolute inset-0 w-full h-full rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+                    <span class="relative cursor-pointer text-[1em] uppercase text-white font-poppins font-normal">see all work</span>
+                </motion.button>
             </div>
         </div>
         <motion.div className='flex flex-1 items-center overflow-x-auto w-full my-10'

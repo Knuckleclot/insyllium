@@ -79,7 +79,12 @@ const Contact = () => {
                         ))}
                     </select>
 
-                    <button onClick={sendConsultation} className='py-4 px-6 hover:bg-blue-500 border-none cursor-pointer transition-all duration-200 ease-in bg-black text-white w-[90%] md:w-[70%] font-poppins font-semibold text-[20px] rounded-lg'>Send message</button>
+                    <button onClick={sendConsultation} class="w-[90%] md:w-[70%] relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-black rounded-lg group">
+                    <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-blue-500 rounded-lg group-hover:w-full group-hover:h-56"></span>
+                    <span class="absolute inset-0 w-full h-full rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+                    <span class="relative text-white font-poppins font-semibold text-[20px]">Send message</span>
+                    </button>
+                    {/* <button onClick={sendConsultation} className='py-4 px-6 hover:bg-blue-500 border-none cursor-pointer transition-all duration-200 ease-in bg-black text-white w-[90%] md:w-[70%] font-poppins font-semibold text-[20px] rounded-lg'>Send message</button> */}
                 </div>
             </div>
         </div>
