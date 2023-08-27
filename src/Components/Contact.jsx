@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 import Navbar from './Navbar'
 import styles from '../style'
 import { services,budgetoptions } from '../Constants'
@@ -19,7 +19,7 @@ const Contact = () => {
         }
     }
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         window.scrollTo(0, 0)
       }, [])
     

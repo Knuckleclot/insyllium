@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 import Navbar from './Navbar'
 import styles from '../style'
 import { aboutimage} from '../assets'
@@ -20,7 +20,7 @@ const About = () => {
       
       window.addEventListener('scroll',changeNavBackground)
 
-      useEffect(() => {
+      useLayoutEffect(() => {
         window.scrollTo(0, 0)
       }, [])
 
