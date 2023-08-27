@@ -29,7 +29,7 @@ const Navbar = () => {
           <img loading='lazy'
             src={lightmodelogo}
             alt="logo"
-            className="w-[100px]  h-[30px] md:w-[200px] md:h-[45px] cursor-pointer object-contain z-[999]"
+            className="relative -left-[3%] w-[100px] h-[30px] md:w-[200px] md:h-[45px] cursor-pointer object-contain z-[999]"
             onClick={() => {
               window.location.href = "/";
             }}
@@ -38,7 +38,7 @@ const Navbar = () => {
           <img loading='lazy'
             src={darkmodelogo}
             alt="logo"
-            className="w-[100px]  h-[30px] md:w-[200px] md:h-[45px] cursor-pointer object-contain z-[999]"
+            className="relative -left-[3%] w-[100px]  h-[30px] md:w-[200px] md:h-[45px] cursor-pointer object-contain z-[999]"
             onClick={() => {
               window.location.href = "/";
             }}

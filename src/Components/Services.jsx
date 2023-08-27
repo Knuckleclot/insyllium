@@ -117,8 +117,10 @@ const Services = () => {
                 once:true,
                }}
             >
-              <div className="w-[70px] h-[70px] flex items-center justify-center bg-primary group-hover:bg-blue-500 transition-colors duration-200 ease-in rounded-2xl mb-8 relative left-[50%] translate-x-[-50%]">
-                <img loading='lazy' src={s?.logo} alt="" />
+              <div className="w-[70px] h-[70px] flex items-center justify-center bg-primary transition-colors duration-300 ease-in rounded-2xl mb-8 relative left-[50%] translate-x-[-50%]">
+                    <span class="absolute w-0 h-0 transition-all duration-300 ease-linear bg-blue-500 rounded-2xl group-hover:w-[70px] group-hover:h-[70px]"></span>
+                    <span class="absolute inset-0 w-[70px] h-[70px] rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-primary"></span>
+                <img loading='lazy' src={s?.logo} alt="" className="z-[2]" />
               </div>
               <h4 className="font-semibold text-xl text-dark mb-3 text-center">
                 {s?.title}
