@@ -103,7 +103,7 @@ const About = () => {
                     <div className='flex flex-col p-8 gap-4'>
                         <BiSolidQuoteLeft size={50} className='text-white'/>
                         <p className='font-poppins font-normal text-[16px] text-white text-left lowercase'>In the realm where creativity meets technology, we are your partner in turning ideas into interactive, user-centric digital experiences.</p>
-                        <p className='font-poppins font-normal text-[16px] text-white text-left uppercase'>- mendime tholla</p>
+                        {/* <p className='font-poppins font-normal text-[16px] text-white text-left uppercase'>- mendime tholla</p> */}
                     </div>
                 </motion.div>
             </div>

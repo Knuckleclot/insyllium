@@ -72,12 +72,12 @@ const Contact = () => {
                     <input type="text" onChange={(e) => setemail(e.target.value)} placeholder='Your email' className='font-poppins transition-all duration-200 ease-in border-b-2 border-b-black w-[90%] md:w-[70%] mt-4 p-2 pl-0 hover:border-b-blue-500 focus:border-b-blue-500 text-gray-700 outline-none' required/>
                     <input type="text" onChange={(e) => setphone(e.target.value)} placeholder='Mobile (optional) ' className='font-poppins transition-all duration-200 ease-in border-b-2 border-b-black w-[90%] md:w-[70%] mt-4 p-2 pl-0 hover:border-b-blue-500 focus:border-b-blue-500 text-gray-700 outline-none' required/>
                     <textarea name="" onChange={(e) => setmessage(e.target.value)} id="" cols="30" rows="5" placeholder='Your message' className='resize-none transition-all duration-200 ease-in p-2 mt-4 w-[90%] md:w-[70%] outline-none border-2 border-black font-poppins hover:border-blue-500'></textarea>
-                    <select name="" onChange={(e) => setbudget(e.target.value)} id="" className='font-poppins transition-all duration-200 ease-in px-4 py-2 outline-none pl-0 cursor-pointer w-[90%] md:w-[70%] border-b-black border-b-2 hover:border-b-blue-500'>
+                    {/* <select name="" onChange={(e) => setbudget(e.target.value)} id="" className='font-poppins transition-all duration-200 ease-in px-4 py-2 outline-none pl-0 cursor-pointer w-[90%] md:w-[70%] border-b-black border-b-2 hover:border-b-blue-500'>
                         <option value={""} className="">Select your budget</option>
                         {budgetoptions.map((s)=>(
                             <option value={s?.title} key={s?.id}>{s?.title}</option>
                         ))}
-                    </select>
+                    </select> */}
 
                     <button onClick={sendConsultation} class="w-[90%] md:w-[70%] relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-black rounded-lg group">
                     <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-blue-500 rounded-lg group-hover:w-full group-hover:h-56"></span>
