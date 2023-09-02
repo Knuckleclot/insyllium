@@ -21,7 +21,7 @@ const Navbar = () => {
   window.addEventListener("scroll", changeNavBackground);
 
   return (
-    <nav
+    <nav id="navbar"
       className={`w-[90%] xl:w-[60%] mx-auto py-4 items-center flex justify-between z-[999]`}
     >
       <div className="flex items-center w-full justify-between z-[3]">
