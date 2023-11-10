@@ -18,6 +18,10 @@ const Footer = () =>{
           <p className={`${styles.paragraph} mt-4 max-w-[310px]`}>
           Partner with us to unlock the full potential of technology and reshape the way you do business. 
           </p>
+          <div className='flex flex-col mt-4'>
+              <p className='font-poppins font-normal text-[16px] text-dimWhite'>Phone: <span className='font-medium text-white'> +389 71 604 221</span></p>
+              <p className='font-poppins font-normal text-[16px] text-dimWhite'>Email:<span className='font-medium text-white'> info@insyllium.com</span></p>
+          </div>
         </div>
 
         <div className='flex-[1.5] w-full flex flex-row justify-between sm:justify-end gap-12 flex-wrap md:mt-0 mt-10 z-[2]'>
