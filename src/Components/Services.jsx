@@ -1,137 +1,81 @@
-import React from "react";
-import { logo, nodelogo } from "../assets";
-import {
-  Card,
-  CardBody,
-  CardFooter,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
+import React, { useState } from "react";
 import { services } from "../Constants";
 import {motion} from 'framer-motion'
+import { AiOutlineArrowRight } from "react-icons/ai";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const Services = () => {
+  const breakpoints = {
+    320: {
+      slidesPerView: 1.1,
+      spaceBetween: 30,
+    },
+    480: {
+      slidesPerView: 1.5,
+      spaceBetween: 40,
+    },
+    708: {
+      slidesPerView: 2,
+      spaceBetween: 50,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 100,
+    },
+    1300: {
+      slidesPerView: 4,
+      spaceBetween: 150,
+    },
+  };
+
+  const [isHovered, setIsHovered] = useState();
+
+  const handleMouseEnter = (s) => {
+    setIsHovered(s?.id);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered('');
+  };
+
   return (
     <section className="pt-20 lg:pt-[120px] pb-12 lg:pb-[90px]">
       <div className="flex flex-wrap -mx-4">
-        <div className="w-full px-4">
-          <div className="text-center mx-auto mb-12 lg:mb-20 max-w-[510px]">
-            <motion.span className="font-semibold text-lg text-primary mb-2 block"
-            initial={{
-              opacity:0,
-              y:200,
-          }}
-          whileInView={{
-              opacity:1,
-              y:0,
-              transition:{
-                  delay:0.10,
-                  duration:0.50,
-              }
-          }}
-          viewport={{
-              once:true,
-          }}>
-              Our Services
-            </motion.span>
-            <motion.h2
-              className="
-                  font-bold
-                  text-3xl
-                  sm:text-4xl
-                  md:text-[40px]
-                  text-dark
-                  mb-4
-                  "
-                  initial={{
-                    opacity:0,
-                    y:200,
-                }}
-                whileInView={{
-                    opacity:1,
-                    y:0,
-                    transition:{
-                        delay:0.25,
-                        duration:0.50,
-                    }
-                }}
-                viewport={{
-                    once:true,
-                }}
-            >
-              What We Offer
-            </motion.h2>
-            <motion.p className="text-base text-body-color"
-            initial={{
-              opacity:0,
-              y:200,
-          }}
-          whileInView={{
-              opacity:1,
-              y:0,
-              transition:{
-                  delay:0.35,
-                  duration:0.50,
-              }
-          }}
-          viewport={{
-              once:true,
-          }}>
-            With strategic insights, we amplify digital footprints, fostering growth through impactful solutions.
-            </motion.p>
-          </div>
+        <div className="w-full px-4 flex flex-col md:flex-row justify-between items-start mb-20 gap-12">
+            <p className="font-popins text-white text-[2rem] font-semibold w-full md:w-[40%]">Our network of talents are ready to help.</p>
+            <div className="flex flex-col gap-4 w-full md:w-[60%]">
+                <p className="font-poppins font-normal text-gray-300 text-[16px]">
+                    Explore a world of possibilities with our dedicated team of experts. Whether you're looking for innovative solutions, reliable services, or expert guidance, we've got you covered.
+                </p>
+                <div className="flex items-center gap-2 cursor-pointer" onClick={()=>window.location.href='/contact'}>
+                    <AiOutlineArrowRight className="text-[#46a2aa]" size={20}/>
+                    <p className="text-[#46a2aa] font-poppins font-medium text-lg">Get a quote!</p>
+                </div>
+            </div>
+
         </div>
       </div>
-      <div className="flex flex-wrap -mx-4 justify-center">
+        <Swiper
+         breakpoints={breakpoints}
+         className="overflow-visible"
+         >
         {services.map((s,i) => (
-          <div
-            className="md:w-1/2 lg:w-1/3 px-4 group hover:scale-[1.02] transition-all duraiton-200 ease-in cursor-pointer h-[350px] w-[400px]"
-            key={s?.id}
-          >
-            <motion.div
-              className="
-               p-10
-               md:px-7
-               xl:px-10
-               rounded-[20px]
-               bg-white
-               shadow-md
-               hover:shadow-lg
-               mb-8
-               max-h-[100%]
-               transition-all
-               duration-300
-               ease-in
-               "
-               initial={{
-                opacity:0,
-               }}
-               whileInView={{
-                opacity:1,
-                transition:{
-                  delay:0.15*i,
-                  duration:0.50,
-                }
-               }}
-               viewport={{
-                once:true,
-               }}
-            >
-              <div className="w-[70px] h-[70px] flex items-center justify-center bg-primary transition-colors duration-300 ease-in rounded-2xl mb-8 relative left-[50%] translate-x-[-50%]">
-                    <span class="absolute w-0 h-0 transition-all duration-300 ease-linear bg-blue-500 rounded-2xl group-hover:w-[70px] group-hover:h-[70px]"></span>
-                    <span class="absolute inset-0 w-[70px] h-[70px] rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-primary"></span>
-                <img loading='lazy' src={s?.logo} alt="" className="z-[2]" />
-              </div>
-              <h4 className="font-semibold text-xl text-dark mb-3 text-center">
-                {s?.title}
-              </h4>
-              <p className="text-body-color text-center">
-                {s?.content}
-              </p>
-            </motion.div>
+         <SwiperSlide>
+          <div 
+            onMouseEnter={()=>handleMouseEnter(s)}
+            onMouseLeave={handleMouseLeave} className={`w-[300px] transition-all duration-300 h-max rounded-2xl bg-[#262836] flex flex-col items-start justify-start gap-4 p-8 ${isHovered==s?.id&&'box-shadow scale-[1.03]'}`}>
+            <span className="p-4 rounded-full font-medium font-poppins text-lg text-white bg-[#46a2aa] flex justify-center items-center"><img src={s?.logo} alt="" className="object-fit w-[25px] h-[25px]"/></span>
+            <p className="font-poppins font-medium text-lg text-white">{s?.title}</p>
+            <p className="font-poppins font-normal text-sm text-gray-300">{s?.content}</p>
+            <div className="flex items-center gap-2 cursor-pointer" onClick={()=>window.location.href=`/${s?.link}`}>
+              <p className="text-white font-poppins font-normal text-[17px] border-b border-b-[#46a2aa]">Learn more</p>
+              <AiOutlineArrowRight className="text-white" size={20}/>
+            </div>
           </div>
-        ))}
-      </div>
+          </SwiperSlide>
+         ))}
+        </Swiper>
     </section>
   );
 };

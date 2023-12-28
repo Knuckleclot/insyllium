@@ -1,106 +1,57 @@
 import React, { useState } from 'react'
-import { motion } from 'framer-motion'
-import Typewriter from 'typewriter-effect';
-import styles from '../style';
-import Lottie from 'lottie-react'
+import { herobgimage } from '../assets';
+import { AiFillClockCircle, AiFillStar, AiOutlineArrowRight, AiOutlineTeam } from 'react-icons/ai';
+import Lottie from 'lottie-react';
 import animation from '../assets/webdevanimation.json'
+import heroanimation from '../assets/insyllium_icon.json'
+
+const heroFeatures = [
+  {
+    icon: <AiFillStar size={20} className='text-[#e9e8e8]'/>,
+    name: 'Top 1% IT Talent',
+  },
+  {
+    icon: <AiFillClockCircle size={20} className='text-[#e9e8e8]'/>,
+    name: 'Timezone Aligned',
+  },
+  {
+    icon: <AiOutlineTeam size={20} className='text-[#e9e8e8]'/>,
+    name: 'Experienced Team',
+  },
+];
 
 const Hero = () => {   
   return (
-    <div className='flex flex-col sm:flex-row'>
-        <div className='flex-1 items-start flex flex-col justify-center'>
-            <motion.h1 className='font-poppins font-semibold ss:text-[52px] text-[42px] text-white'
-             initial={{
-                opacity:0,
-                y:100,
-               }}
-               whileInView={{
-                opacity:1,
-                y:0,
-                transition:{
-                  delay:0.15,
-                  duration:0.50,
-                }
-               }}
-               viewport={{
-                once:true,
-               }}>Coding your{" "} <br className='md:block hidden'/>
-                <span className='text-white sm:text-secondary xl:text-white'><Typewriter
-                options={{      
-                    strings: ['Vision', 'Ideas', 'Future','Success','Experience','Dreams'],
-                    autoStart: true,
-                    loop: true,
-                }}
-                
-                />
-                </span> 
-                </motion.h1>
-                <motion.p className={`${styles.paragraph} max-w-[470px] mt-5 opacity-100 transition-opacity duration-500 mb-6 sm:text-black xl:text-dimWhite`}
-                    initial={{
-                        y:100,
-                        opacity:0,
-                    }}
-                    whileInView={{
-                        y:0,
-                        opacity:1,
-                        transition:{
-                        delay:0.35,
-                        duration:0.50,
-                        },
-                    }}
-                    viewport={{
-                        once:true,
-                    }}
-                >Empowering businesses to thrive in today's digital realm through our ingenious solutions is our driving force.
-                </motion.p>
-                {/* <motion.button className='bg-primary transition-all duration-200 ease-in hover:bg-blue-500 px-8 py-3 rounded-3xl border-none cursor-pointer text-[1em] uppercase text-white font-poppins font-normal'
-                  initial={{
-                    opacity:0,
-                    y:100,
-                   }}
-                   whileInView={{
-                     y:0,
-                     opacity:100,
-                      transition:{
-                      delay:0.35,
-                      duration:0.50,
-                    }
-                   }}
-                   viewport={{
-                    once:true,
-                   }}
-                   onClick={()=>{
-                    window.location.href='#consultation'
-                   }}
-                >
-                    Get Started
-                </motion.button> */}
-                <motion.button onClick={()=>{
-                    window.location.href='#consultation'
-                   }} class="relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-poppins font-normal text-white bg-black rounded-3xl group"
-                   initial={{
-                    opacity:0,
-                    y:100,
-                   }}
-                   whileInView={{
-                     y:0,
-                     opacity:100,
-                      transition:{
-                      delay:0.35,
-                      duration:0.50,
-                    }
-                   }}
-                   viewport={{
-                    once:true,
-                   }}>
-                    <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-blue-500 rounded-3xl group-hover:w-full group-hover:h-56"></span>
-                    <span class="absolute inset-0 w-full h-full rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
-                    <span class="relative cursor-pointer text-[1em] uppercase text-white font-poppins font-normal">get started</span>
-                </motion.button>
+    <div className='flex flex-col-reverse sm:flex-row relative'>
+      {/* <div className='flex-1'>
+        <img src={herobgimage} alt="" className='object-contain'/>
+      </div> */}
+        <div className='flex-1 z-[5] items-start flex flex-col justify-start pt-12 gap-4'>
+            <p className='font-poppins font-medium text-lg text-[#e9e8e8] sm:text-3xl sm:font-bold'>
+            Welcome to Insyllium, your digital catalyst for accelerated innovation through creative talent solutions.
+            </p>
+            <p className='font-poppins font-normal text-sm mt-6 text-[#979694] sm:text-lg'>
+            We help businesses stay ahead by integrating creative excellence into projects.    
+            </p>
+            <div className='flex items-center gap-4 mt-2'>
+              <button onClick={()=>window.location.href='/contact'} className='py-2 px-6 text-white font-poppins text-[17px] bg-[#46a2aa] rounded-lg'>Let's talk</button>
+              <div className='flex items-center gap-2'>
+              <AiOutlineArrowRight color='white' size={20}/>
+              <button onClick={()=>window.location.href='/about'} className='text-white font-poppins text-[17px] border-b border-b-[#46a2aa]'>Learn more</button>
+              </div>
+            </div>
+            <div className='flex items-center flex-wrap justify-center sm:justify-start gap-4 mt-8'>
+                {heroFeatures?.map((feature)=>(
+                  <div className='flex items-center gap-2'>
+                    {feature?.icon}
+                    <p className='font-poppins font-normal text-[#e9e8e8] text-sm'>{feature?.name}</p>
+                  </div>  
+                ))}
+            </div>
         </div>
-        <div className='flex-1'>
-            {/* <h1>hello</h1> */}
-            <Lottie animationData={animation}/>
+        <div className='flex-1 relative'>
+          <div className='turqouise__gradient w-full h-1/2 absolute top-20'/>
+            <Lottie animationData={animation} />
         </div>
     </div>
   )

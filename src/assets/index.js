@@ -29,10 +29,14 @@ import muiz from './muiz.jpg'
 import etnik from './etnik.jpg'
 import burim from './burim.jpg'
 import naim from './naim.jpg'
+import herobgimage from './herobgimage.jpg'
+import insylinkphoto from './insylinkphoto.png'
 
 
 export {
     logo,
+    insylinkphoto,
+    herobgimage,
     laptop,
     curve,
     reactlogo,
