@@ -81,7 +81,7 @@
 }
 
 .box-shadow {
-  box-shadow: 0px 0px 100px -10px rgba(66, 71, 91, 0.3);
+  box-shadow: 0px 0px 80px 0px rgba(122,229,245,0.45);
 }
 
 .sidebar {
@@ -139,8 +139,8 @@
 }
 
 .turqouise__gradient {
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #47c2b8 100%);
-  filter: blur(203px);
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #47c2b8 200%);
+  filter: blur(243px);
 }
 
 .pink__gradient {
@@ -153,7 +153,7 @@
 
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
-  filter: blur(750px);
+  filter: blur(150px);
 }
 
 /* body::-webkit-scrollbar {
@@ -168,3 +168,9 @@ body::-webkit-scrollbar-thumb {
   background-color: #33bbcf;
   outline: 1px solid #33bbcf;
 } */
+
+*::-webkit-scrollbar {
+  display: none;
+  box-sizing: border-box;
+  /* background-color : #F0F4F9; */
+}
