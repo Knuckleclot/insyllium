@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <nav id="navbar" className={`w-[90%] xl:w-[60%] mx-auto py-4 items-center flex justify-between z-[999] bg-[#080A17]`}>
-      <img src={darkmodelogo} alt="" className="relative block w-min h-[30px] cursor-pointer object-cover md:w-min z-[999]" onClick={() => {
+      <img src={darkmodelogo} alt="" className="relative block w-min h-[30px] cursor-pointer object-contain md:object-cover md:w-min z-[999]" onClick={() => {
         window.location.href = "/";
       }}/>
       <div className="items-center gap-8 hidden lg:flex">
